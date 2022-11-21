@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html">
+            <img class="header_logo" src="" alt="DLK logo">
+        </a>
+        <nav class="header_menu">
+            <ul>
+                <li><a href="/pages/blog.html" target="_blank">BLOG</a></li>
+                <li><a href="/pages/catalog.html" target="_blank">CATALOG</a></li>
+                <li><a href="#about">ABOUT US</a></li><!-- здесь исправить ссылку -->
+            </ul>
+        </nav>
+        <img src="" alt="icon_search">
+        <a href="/pages/contact.html">CONTACT US</a>
+    </header>
+    <h2>Toy for kids</h2>
+    <a href="#">Home</a> <!-- Это ссылка на основную страницу -->
+        <!--здесь иконка стрелки в виде псевдоэлемента-->
+        <a href="/pages/catalog.html">Catalog</a>
+        <!--здесь иконка стрелки в виде псевдоэлемента-->
+        <a href="#">Toys</a>
+    <section class="filter">
+        <form action="" method="get"> <!-- не уверена -->
+            <div class="filter__cost">
+                <h3>Cost</h3>
+                <label>0<input type="range" name="">500</label>
+            </div>
+            <ul class="filter__color">
+                <h3>Color</h3>
+                    <li class="checkbox">
+                        <label>
+                            <input type="checkbox" name=""> Black
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input type="checkbox" name=""> Blue
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input type="checkbox" name=""> Green
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input type="checkbox" name=""> White
+                        </label>
+                    </li>
+            </ul>
+            <ul class="filter__delivery">
+                <h3>Delivery</h3>
+                <li>
+                    <label>
+                        <input type="radio" name="method">Free shipping
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="method"checked>Fast shipping
+                    </label>
+                </li>
+            </ul>
+            <div class="filter__amount">
+                <h3>Amount</h3>
+                <input type="button" value="0-5"></input>
+                <input type="button" value="10-20"></input>
+                <input type="button" value="20-50"></input>   
+            </div>
+            <button class="filter__apply" type="submit">Apply</button>     
+          </form>
+    </section>
+    <section class="toys__content">
+        <div class="toys__content_box">
+            <div class="box-card card__bag-chair">
+                <img class="box-cards__img" src="" alt="BAG CHAIR COVER"/>
+                <p>SHARKY BEAN BAG CHAIR COVER</p>
+                <p>$60.00 USD</p>
+            </div>
+            <div class="box-cards card__frames">
+                <img class="box-cards__img" src="" alt="BRASS DECO FRAMES"/>
+                <p>BRASS DECO FRAMES</p>
+                <p>$66.00 USD</p>
+            </div>
+            <div class="box-cards card__apron">
+                <img class="box-cards__img" src="" alt="CIBO FULL APRON"/>
+                <p>CIBO FULL APRON</p>
+                <p>$60.00 USD</p>
+            </div>
+            <div class="box-cards card__gumball-machine">
+                <img class="box-cards__img" src="" alt="GATCHA GATCHA GUMBALL MACHINE"/>
+                <p>GATCHA GATCHA GUMBALL MACHINE</p>
+                <p>$56.00 USD</p>
+            </div>
+            <div class="box-cards card__candle">
+                <img class="box-cards__img" src="" alt="CHRISTMAS ADVENT SCENTED CANDLE"/>
+                <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
+                <p>$29.00 USD</p>
+            </div>
+            <div class="box-cards card__tangle">
+                <img class="box-cards__img" src="" alt="TANGLE SPINNING TEA LIGHT"/>
+                <p>TANGLE SPINNING TEA LIGHT</p>
+                <p>$56.00 USD</p>
+            </div>
+        </div>
+        <nav class="toys__content_navigation">
+            <button type="button" class="button_paginator btn--inactive"></button>
+            <button type="button" class="button_paginator btn--inactive">1</button>
+            <button type="button" class="button_paginator btn--active">2</button>
+            <button type="button" class="button_paginator btn--active">3</button>
+            <button type="button" class="button_paginator btn--active">4</button>
+            <button type="button" class="button_paginator btn--inactive"></button>
+        </nav>   
+    </section>
+    <footer class="footer">
+        <section class="footer__nav">
+            <p class="footer__nav_list heading">Navigation</p>
+            <ul class="footer__nav_list">
+                <li><a class="footer__nav_list-item" href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Design Services</a></li>
+                <li><a href="#">Featured On</a></li>
+                <li><a href="#">2018 Holiday Catalog</a></li>
+                <li><a href="#">Shop By Designer</a></li>
+            </ul>
+        </section>
+        <section class="footer__info">
+            <p class="footer__info_list heading">Customer Information</p>
+            <ul class="footer__info_list">
+                <li><a class="footer__info_list-item" href="#">Contact Us</a></li>
+                <li><a href="#">Sale Exclusions</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </section>
+        <section class="footer__connect">
+            <p class="footer__connect heading">Connect</p>
+            <form action="">
+                <input type="email" name="email" placeholder="Email">
+                <button type="submit">Join</button>
+            </form>
+            <ul class="footer__connect_links">
+                <li><a class="footer__connect_link-item icon-f" href=""><img src="" alt="facebook"></a></li>
+                <li><a class="footer__connect_link-item icon-T" href=""><img src="" alt="twitter"></a></li>
+                <li><a class="footer__connect_link-item icon-p" href=""><img src="" alt="pinterest"></a></li>
+                <li><a class="footer__connect_link-item icon-i" href=""><img src="" alt="instagram"></a></li>
+            </ul>
+        </section>
+        <p>Company Rating &#9734;&#9734;&#9734;&#9734;&#9734;</p>
+        <p>Copyright &copy; 2018 Dlk • Design Life Kids;</p>
+        <p>Web Design — Direct Line Development</p>
+    </footer>
+    
+</body>
+</html>
