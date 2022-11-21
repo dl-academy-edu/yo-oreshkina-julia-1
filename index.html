@@ -8,20 +8,18 @@
 </head>
 <body>
     <header class="header">
-        <a href="#">
+        <a href="/index.html">
             <img class="header_logo" src="" alt="DLK logo">
         </a>
         <nav class="header_menu">
             <ul>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CATALOG</a></li>
-                <li><a href="#">ABOUT US</a></li>
+                <li><a href="/pages/blog.html" target="_blank">BLOG</a></li>
+                <li><a href="/pages/catalog.html" target="_blank">CATALOG</a></li>
+                <li><a href="#about">ABOUT US</a></li>
             </ul>
         </nav>
-        <!-- Здесь иконка поиска. Как её лучше оформить? -->
-        <a href="#">
-            <img src="" alt="icon_search">
-            CONTACT US</a>
+        <img src="" alt="icon_search">
+        <a href="/pages/contact.html">CONTACT US</a>
     </header>
     <main>
         <section class="slider">
@@ -47,7 +45,6 @@
     </main>
     <section class="products">
         <h2>Category Products</h2>
-        <!-- Здесь хотела использовать список, но сомневаюсь, как стилизовать потом -->
         <div class="products__list">
             <div class="products__list_item">
                 <a href="#">
@@ -75,8 +72,8 @@
             </div>
         </div>
         <nav class="products__navigation">
-            <button type="button" class="button_paginator btn-prev"><</button>
-            <button type="button" class="button_paginator btn-next">></button>           
+            <button type="button" class="button_paginator btn-prev"></button>
+            <button type="button" class="button_paginator btn-next"></button>           
         </nav>
         <p class="products__inform">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
     </section>
@@ -103,7 +100,7 @@
         <img class="partner__logo" src="" alt="eltex">
         <img class="partner__logo" src="" alt="owox">
     </section>
-    <section>
+    <section id="about">
         <div class="about">
             <h2>Design Life Kids</h2>
             <p>About Us</p>
@@ -163,9 +160,6 @@
         <p>Company Rating &#9734;&#9734;&#9734;&#9734;&#9734;</p>
         <p>Copyright &copy; 2018 Dlk • Design Life Kids;</p>
         <p>Web Design — Direct Line Development</p>
-            
-        
     </footer>
-
 </body>
 </html>
