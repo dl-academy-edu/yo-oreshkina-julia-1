@@ -12,21 +12,21 @@
             <img class="header_logo" src="" alt="DLK logo">
         </a>
         <nav class="header_menu">
-            <ul>
-                <li><a href="/pages/blog.html" target="_blank">BLOG</a></li>
-                <li><a href="/pages/catalog.html" target="_blank">CATALOG</a></li>
-                <li><a href="#about">ABOUT US</a></li><!-- здесь исправить ссылку -->
+            <ul class="header__menu_list">
+                <li class="header__menu_item"><a class="header__menu_link" href="/pages/blog.html" target="_blank">BLOG</a></li>
+                <li class="header__menu_item"><a class="header__menu_link" href="/pages/catalog.html" target="_blank">CATALOG</a></li>
+                <li class="header__menu_item"><a class="header__menu_link" href="#about">ABOUT US</a></li><!-- здесь исправить ссылку -->
             </ul>
         </nav>
-        <img src="" alt="icon_search">
-        <a href="/pages/contact.html">CONTACT US</a>
+        <img class="header__contact_icon" src="../image/icons/search.svg" alt="icon_search">
+        <a class="header__contact_link" href="/pages/contact.html">CONTACT US</a>
     </header>
-    <h2>Toy for kids</h2>
-    <a href="#">Home</a> <!-- Это ссылка на основную страницу -->
+    <h2 class="toys__title">Toy for kids</h2>
+    <a class="breadcrumbs_one" href="#">Home</a> <!-- Это ссылка на основную страницу -->
         <!--здесь иконка стрелки в виде псевдоэлемента-->
-        <a href="/pages/catalog.html">Catalog</a>
+        <a class="breadcrumbs_two" href="/pages/catalog.html">Catalog</a>
         <!--здесь иконка стрелки в виде псевдоэлемента-->
-        <a href="#">Toys</a>
+        <a class="breadcrumbs_three" href="#">Toys</a>
     <section class="filter">
         <form action="" method="get"> <!-- не уверена -->
             <div class="filter__cost">
@@ -86,37 +86,37 @@
         <div class="toys__content_box">
             <div class="box-cards card__bag-chair">
                 <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="" alt="Bag chair cover"/>
+                <img class="box-cards__img" src="../image/bag_chair_cover.jpg" alt="bag chair cover" width="380" height="385"/>
                 <p>SHARKY BEAN BAG CHAIR COVER</p>
                 <p>$60.00 USD</p>
             </div>
             <div class="box-cards card__frames">
                 <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="" alt="Brass deco frames"/>
+                <img class="box-cards__img" src="../image/frames.jpg" alt="brass deco frames" width="380" height="385"/>
                 <p>BRASS DECO FRAMES</p>
                 <p>$66.00 USD</p>
             </div>
             <div class="box-cards card__apron">
                 <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="" alt="Cibo full apron"/>
+                <img class="box-cards__img" src="../image/apron.jpg" alt="cibo full apron" width="380" height="385"/>
                 <p>CIBO FULL APRON</p>
                 <p>$60.00 USD</p>
             </div>
             <div class="box-cards card__gumball-machine">
                 <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="" alt="Gumble machine"/>
+                <img class="box-cards__img" src="../image/gam_machine.jpg" alt="gumble machine" width="380" height="385"/>
                 <p>GATCHA GATCHA GUMBALL MACHINE</p>
                 <p>$56.00 USD</p>
             </div>
             <div class="box-cards card__candle">
                 <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="" alt="Scented candle"/>
+                <img class="box-cards__img" src="../image/candle.jpg" alt="scented candle" width="380" height="385"/>
                 <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
                 <p>$29.00 USD</p>
             </div>
             <div class="box-cards card__tangle">
                 <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="" alt="Tangle spinning tea light"/>
+                <img class="box-cards__img" src="../image/tangle.jpg" alt="tangle spinning tea light" width="380" height="382"/>
                 <p>TANGLE SPINNING TEA LIGHT</p>
                 <p>$56.00 USD</p>
             </div>
@@ -132,62 +132,61 @@
     </section>
     <footer class="footer">
         <section class="footer__nav">
-            <p class="footer__nav_list heading">Navigation</p>
+            <p class="footer__nav_list title">Navigation</p>
             <ul class="footer__nav_list">
-                <li><a class="footer__nav_list-item" href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Design Services</a></li>
-                <li><a href="#">Featured On</a></li>
-                <li><a href="#">2018 Holiday Catalog</a></li>
-                <li><a href="#">Shop By Designer</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">About Us</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Design Services</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Blog</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Featured On</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">2018 Holiday Catalog</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Shop By Designer</a></li>
             </ul>
         </section>
         <section class="footer__info">
-            <p class="footer__info_list heading">Customer Information</p>
+            <p class="footer__info title">Customer Information</p>
             <ul class="footer__info_list">
-                <li><a class="footer__info_list-item" href="#">Contact Us</a></li>
-                <li><a href="#">Sale Exclusions</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Search</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Contact Us</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Sale Exclusions</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Shipping & Returns</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Terms & Conditions</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Privacy Policy</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Search</a></li>
             </ul>
         </section>
         <section class="footer__connect">
-            <p class="footer__connect heading">Connect</p>
+            <p class="footer__connect title">Connect</p>
             <form action="">
                 <input type="email" name="email" placeholder="Email">
                 <button type="submit">Join</button>
             </form>
             <ul class="footer__connect_links">
-                <li><a class="footer__connect_link-item icon-f" href=""><img src="" alt="facebook"></a></li>
-                <li><a class="footer__connect_link-item icon-T" href=""><img src="" alt="twitter"></a></li>
-                <li><a class="footer__connect_link-item icon-p" href=""><img src="" alt="pinterest"></a></li>
-                <li><a class="footer__connect_link-item icon-i" href=""><img src="" alt="instagram"></a></li>
+                <li><a class="footer__connect_link-item icon-f" href="https://facebook.com/"><img src="" alt="facebook"></a></li>
+                <li><a class="footer__connect_link-item icon-T" href="https://twitter.com/"><img src="" alt="twitter"></a></li>
+                <li><a class="footer__connect_link-item icon-p" href="https://pinterest.com/"><img src="" alt="pinterest"></a></li>
+                <li><a class="footer__connect_link-item icon-i" href="https://instagram.com/"><img src="" alt="instagram"></a></li>
             </ul>
         </section>
         <fieldset class="rating">
             <legend class="rating__caption">Company Rating</legend>
             <div class="rating-group">
                 <input class="rating__input" type="radio" name="star" id="star-1" value="2">
-                <label class="rating__star" for="star-1"></label>
+                <label class="rating__star" aria-label="terribly" for="star-1"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-2" value="1">
-                <label class="rating__star" for="star-2"></label>
+                <label class="rating__star" aria-label="below average" for="star-2"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-3" value="3">
-                <label class="rating__star" for="star-3"></label>
+                <label class="rating__star" aria-label="acceptable" for="star-3"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-4" value="4">
-                <label class="rating__star" for="star-4"></label>
+                <label class="rating__star" aria-label="good" for="star-4"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-5" value="5">
-                <label class="rating__star" for="star-5"></label>
+                <label class="rating__star" aria-label="excellent" for="star-5"></label>
             </div> 
         </fieldset>
         <p>Copyright &copy; 2018 Dlk • Design Life Kids;</p>
         <a href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
-    </footer>
-    
+    </footer>  
 </body>
 </html>

@@ -9,63 +9,61 @@
 <body>
     <header class="header">
         <a href="/index.html">
-            <img class="header_logo" src="" alt="DLK logo">
+            <img class="header_logo" src="../image/icons/dlk-logo.svg" alt="DLK logo">
         </a>
         <nav class="header_menu">
-            <ul>
-                <li><a href="/pages/blog.html" target="_blank">BLOG</a></li>
-                <li><a href="/pages/catalog.html" target="_blank">CATALOG</a></li>
-                <li><a href="#about">ABOUT US</a></li>
+            <ul class="header__menu_list">
+                <li class="header__menu_item"><a class="header__menu_link" href="/pages/blog.html" target="_blank">BLOG</a></li>
+                <li class="header__menu_item"><a class="header__menu_link" href="/pages/catalog.html" target="_blank">CATALOG</a></li>
+                <li class="header__menu_item"><a class="header__menu_link" href="#about">ABOUT US</a></li>
             </ul>
         </nav>
-        <img src="" alt="icon_search">
-        <a href="/pages/contact.html">CONTACT US</a>
+        <img class="header__contact_icon" src="../image/icons/search.svg" alt="icon_search">
+        <a class="header__contact_link" href="/pages/contact.html">CONTACT US</a>
     </header>
-    <main>
-        <h2>Category Products</h2>
-        <a href="#">Home</a> <!-- Это ссылка на основную страницу ?-->
+    <main class="catalog">
+        <h2 class="catalog__title">Category Products</h2>
+        <a class="breadcrumbs_one" href="#">Home</a> <!-- Это ссылка на основную страницу ?-->
         <!--здесь иконка стрелки в виде псевдоэлемента-->
-        <a href="#">Catalog</a>
-        <section>
-            <div class="products__list">
-                <div class="products__list_item">
-                    <a href="#">
-                        <img src="" alt="APPAREL KIDS">
-                    APPAREL KIDS
-                    </a>
-                </div>
-                <div class="products__list_item">
-                    <a href="#">
-                        <img src="" alt="HOLIDAY SHOP">
-                    HOLIDAY SHOP
-                    </a>
-                </div>
-                <div class="products__list_item">
-                    <a href="#">
-                        <img src="" alt="TOYS">
-                    TOYS
-                    </a>
-                </div>
-                <div class="products__list_item">
-                    <a href="#">
-                        <img src="" alt="ACCESSORIES">
-                    ACCESSORIES
-                    </a>
-                </div>
-                <div class="products__list_item">
-                    <a href="#">
-                        <img src="" alt="SALE">
-                        SALE
-                    </a>
-                </div>
-                <div class="products__list_item">
-                    <a href="#">
-                        <img src="" alt="APPAREL ADULTS">
-                        APPAREL ADULTS
-                    </a>
-                </div>
-            </div>
-        </section>
+        <a class="breadcrumbs_two " href="#">Catalog</a>
+        <ul class="catalog__list">
+            <li class="catalog__item">
+                <a href="#">
+                    <img src="../image/apparel-kids.png" alt="apparel kids" width="244" height="177">
+                APPAREL KIDS
+                </a>
+            </li>
+            <li class="catalog__item">
+                <a href="#">
+                    <img src="../image/sock.png" alt="holiday shop" width="208" height="244">
+                HOLIDAY SHOP
+                </a>
+            </li>
+            <li class="catalog__item">
+                <a href="./toys.html">
+                    <img src="../image/toy.png" alt="toys" width="270" height="270">
+                TOYS
+                </a>
+            </li>
+            <li class="catalog__item">
+                <a href="#">
+                    <img src="../image/drowing.png" alt="accessories" width="240" height="250">
+                ACCESSORIES
+                </a>
+            </li>
+            <li class="catalog__item">
+                <a href="#">
+                    <img src="../image/sale.png" alt="sale" width="248" height="248">
+                    SALE
+                </a>
+            </li>
+            <li class="catalog__item">
+                <a href="#">
+                    <img src="../image/apparel-adults.png" alt="apparel adults" width="271" height="204">
+                    APPAREL ADULTS
+                </a>
+            </li>
+        </ul>
         <section>
             <h2>Product Description</h2>
             <p>Interactive doll Zapf Creation Baby Born Sister can drink
@@ -82,57 +80,57 @@
     </main>
     <footer class="footer">
         <section class="footer__nav">
-            <p class="footer__nav_list heading">Navigation</p>
+            <p class="footer__nav_list title">Navigation</p>
             <ul class="footer__nav_list">
-                <li><a class="footer__nav_list-item" href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Design Services</a></li>
-                <li><a href="#">Featured On</a></li>
-                <li><a href="#">2018 Holiday Catalog</a></li>
-                <li><a href="#">Shop By Designer</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">About Us</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Design Services</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Blog</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Featured On</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">2018 Holiday Catalog</a></li>
+                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Shop By Designer</a></li>
             </ul>
         </section>
         <section class="footer__info">
-            <p class="footer__info_list heading">Customer Information</p>
+            <p class="footer__info title">Customer Information</p>
             <ul class="footer__info_list">
-                <li><a class="footer__info_list-item" href="#">Contact Us</a></li>
-                <li><a href="#">Sale Exclusions</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Search</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Contact Us</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Sale Exclusions</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Shipping & Returns</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Terms & Conditions</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Privacy Policy</a></li>
+                <li class="footer__info_item"><a class="footer__info_link" href="#">Search</a></li>
             </ul>
         </section>
         <section class="footer__connect">
-            <p class="footer__connect heading">Connect</p>
+            <p class="footer__connect title">Connect</p>
             <form action="">
                 <input type="email" name="email" placeholder="Email">
                 <button type="submit">Join</button>
             </form>
             <ul class="footer__connect_links">
-                <li><a class="footer__connect_link-item icon-f" href=""><img src="" alt="facebook"></a></li>
-                <li><a class="footer__connect_link-item icon-T" href=""><img src="" alt="twitter"></a></li>
-                <li><a class="footer__connect_link-item icon-p" href=""><img src="" alt="pinterest"></a></li>
-                <li><a class="footer__connect_link-item icon-i" href=""><img src="" alt="instagram"></a></li>
+                <li><a class="footer__connect_link-item icon-f" href="https://facebook.com/"><img src="" alt="facebook"></a></li>
+                <li><a class="footer__connect_link-item icon-T" href="https://twitter.com/"><img src="" alt="twitter"></a></li>
+                <li><a class="footer__connect_link-item icon-p" href="https://pinterest.com/"><img src="" alt="pinterest"></a></li>
+                <li><a class="footer__connect_link-item icon-i" href="https://instagram.com/"><img src="" alt="instagram"></a></li>
             </ul>
         </section>
         <fieldset class="rating">
             <legend class="rating__caption">Company Rating</legend>
             <div class="rating-group">
                 <input class="rating__input" type="radio" name="star" id="star-1" value="2">
-                <label class="rating__star" for="star-1"></label>
+                <label class="rating__star" aria-label="terribly" for="star-1"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-2" value="1">
-                <label class="rating__star" for="star-2"></label>
+                <label class="rating__star" aria-label="below average" for="star-2"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-3" value="3">
-                <label class="rating__star" for="star-3"></label>
+                <label class="rating__star" aria-label="acceptable" for="star-3"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-4" value="4">
-                <label class="rating__star" for="star-4"></label>
+                <label class="rating__star" aria-label="good" for="star-4"></label>
 
                 <input class="rating__input" type="radio" name="star" id="star-5" value="5">
-                <label class="rating__star" for="star-5"></label>
+                <label class="rating__star" aria-label="excellent" for="star-5"></label>
             </div> 
         </fieldset>
         <p>Copyright &copy; 2018 Dlk • Design Life Kids;</p>
