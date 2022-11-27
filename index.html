@@ -32,16 +32,16 @@
             <div class="banner__switch">
                 <span class="banner__slide_number">01</span>
                 <ul class="banner__slide_switch">
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
+                    <li class="banner__slide_1"><button aria-label="slide-one" type="button"></button></li>
+                    <li class="banner__slide_2"><button aria-label="slide-two" type="button"></button></li>
+                    <li class="banner__slide_3"><button aria-label="slide-three" type="button"></button></li>
+                    <li class="banner__slide_4"><button aria-label="slide-four" type="button"></button></li>
                 </ul>
             </div>
             <div class="banner__slide">
                 <h1 class="banner__slide_title">THE OOH NOO COLLECTION</h1>
                 <p class="banner__slide_info">Designed in Slovenia</p>
-                <a class="banner__slide_link link_to_form" href="#">EXPLORE NOW</a>   
+                <button class="banner__btn to_modal_window" type="button">EXPLORE NOW</button>   
             </div>
             <p class="banner__delivery_info">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
@@ -75,9 +75,9 @@
                 </a>
             </li>
         </ul>
-        <nav class="products__nav">
-            <button type="button" class="button_paginator btn-prev"></button>
-            <button type="button" class="button_paginator btn-next"></button>           
+        <nav class="products__nav" aria-label="list of product categories">
+            <button type="button" class="button_paginator btn-prev" aria-label="scroll forward"></button>
+            <button type="button" class="button_paginator btn-next" aria-label="scroll back"></button>           
         </nav>
         <p class="products__info">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
     </section>
@@ -85,9 +85,9 @@
         <img src="./image/photo.jpg" alt="designer DLK" width="480" height="559">
         <h2>Delivery</h2>
         <ul>
-            <li>Delivery</li>
-            <li>Guarantee</li>
-            <li>Credit</li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Guarantee</a></li>
+            <li><a href="#">Credit</a></li>
         </ul>
         <p>Some days i feel like i've been working on dlk my entire life and 
             there are other days that i am completely shocked that four years
@@ -99,6 +99,7 @@
         <a href="#">learn more</a>
     </section>
     <section class="partners">
+        <h2 class="visually-hidden"></h2>
         <a class="partners__link" href="https://mail.ru/" target="_blank">
             <img class="partners__logo" src="./image/icons/mail-logo.svg" alt="mail.ru group">
         </a>
@@ -113,25 +114,23 @@
         </a>
     </section>
     <section id="about">
-        <div class="about">
-            <h2>Design Life Kids</h2>
-            <p>About Us</p>
-            <p>Some days i feel like i've been working on dlk my entire life
-             and there are other days that i am completely shocked 
-             that four years have flown by. It's simply magical.</p>
-            <a href="/pages/catalog.html">buy now</a>
-        </div>
-        <article class="contacts">
-            <h2 class="contacts__title">Contacts</h2>
-            <p class="contacts__info">Some days i feel like i've been working on dlk my entire life
-                and there are other days that i am completely shocked 
-                that four years have flown by. It's simply magical.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.578999295751!2d-122.42927503519041!3d37.77646861983597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2z0KXQsNC50LXRgSDQktGN0LvQu9C4LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669031542473!5m2!1sru!2sru"
-                width="600" height="450" style="border:0;" allowfullscreen="" 
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </article>
+        <h2>Design Life Kids</h2>
+        <p>About Us</p>
+        <p>Some days i feel like i've been working on dlk my entire life
+            and there are other days that i am completely shocked 
+            that four years have flown by. It's simply magical.</p>
+        <a href="/pages/catalog.html">buy now</a>
     </section>
+    <article class="contacts">
+        <h2 class="contacts__title">Contacts</h2>
+        <p class="contacts__info">Some days i feel like i've been working on dlk my entire life
+            and there are other days that i am completely shocked 
+            that four years have flown by. It's simply magical.</p>
+        <iframe title="addresses of the DLK company" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.578999295751!2d-122.42927503519041!3d37.77646861983597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2z0KXQsNC50LXRgSDQktGN0LvQu9C4LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669031542473!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </article>
     <footer class="footer">
         <section class="footer__nav">
             <p class="footer__nav_list title">Navigation</p>
@@ -157,15 +156,15 @@
         </section>
         <section class="footer__connect">
             <p class="footer__connect title">Connect</p>
-            <form action="">
+            <form action="" method="post">
                 <input type="email" name="email" placeholder="Email">
                 <button type="submit">Join</button>
             </form>
-            <ul class="footer__connect_links">
-                <li><a class="footer__connect_link-item icon-f" href="https://facebook.com/"><img src="" alt="facebook"></a></li>
-                <li><a class="footer__connect_link-item icon-T" href="https://twitter.com/"><img src="" alt="twitter"></a></li>
-                <li><a class="footer__connect_link-item icon-p" href="https://pinterest.com/"><img src="" alt="pinterest"></a></li>
-                <li><a class="footer__connect_link-item icon-i" href="https://instagram.com/"><img src="" alt="instagram"></a></li>
+            <ul class="footer__connect_list">
+                <li class="footer__connect_item"><a class="footer__connect_link icon-facebook" href="https://facebook.com/" aria-label="share on facebook"></a></li>
+                <li class="footer__connect_item"><a class="footer__connect_link icon-twitter" href="https://twitter.com/" aria-label="share on twitter"></a></li>
+                <li class="footer__connect_item"><a class="footer__connect_link icon-pinterest" href="https://pinterest.com/" aria-label="share on pinterest"></a></li>
+                <li class="footer__connect_item"><a class="footer__connect_link icon-instagram" href="https://instagram.com/" aria-label="share on instagram"></a></li>
             </ul>
         </section>
         <fieldset class="rating">
