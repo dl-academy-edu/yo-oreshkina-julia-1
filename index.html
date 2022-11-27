@@ -189,5 +189,35 @@
         <p>Copyright &copy; 2018 Dlk • Design Life Kids;</p>
         <a href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
     </footer>
+    <section class="modal__window visually-hidden">
+        <form method="POST" action="#">
+            <div class="label__wrapper">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="column__two-input">
+                <div class="label__wrapper">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <div class="label__wrapper">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <div class="label__wrapper">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="label__wrapper">
+                <label>
+                    <input type="checkbox">
+                    By clicking on the button, you consent to the processing of your personal data
+                </label>
+            </div>
+            <button type="submit">submit</button>
+        </form>
+        <button type="button" class="modal__window_closed icon_closed" aria-label="close modal window"></button>
+    </section>
 </body>
 </html>
