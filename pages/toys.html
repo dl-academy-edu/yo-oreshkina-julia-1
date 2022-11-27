@@ -31,96 +31,96 @@
         <form action="" method="get"> <!-- не уверена -->
             <div class="filter__cost">
                 <h3>Cost</h3>
-                <label>0<input type="range" name="">500</label>
+                <label>0<input type="range" name="cost" step="200" min="0" max="500">500</label>
             </div>
-            <div class="filter__color">
-                <h3>Color</h3>
+            <fieldset class="filter__color">
+                <legend>Color</legend>
                 <ul>
                     <li class="checkbox">
                         <label>
-                            <input type="checkbox" name=""> Black
+                            <input type="checkbox" name="color" value="black">Black
                         </label>
                     </li>
                     <li class="checkbox">
                         <label>
-                            <input type="checkbox" name=""> Blue
+                            <input type="checkbox" name="color" value="blue">Blue
                         </label>
                     </li>
                     <li class="checkbox">
                         <label>
-                            <input type="checkbox" name=""> Green
+                            <input type="checkbox" name="color" value="green">Green
                         </label>
                     </li>
                     <li class="checkbox">
                         <label>
-                            <input type="checkbox" name=""> White
+                            <input type="checkbox" name="color" value="white">White
                         </label>
                     </li>
                 </ul>
-            </div>
-            <div class="filter__delivery">
-                <h3>Delivery</h3>
+            </fieldset>
+            <fieldset class="filter__delivery">
+                <legend>Delivery</legend>
                 <ul>
                     <li>
                         <label>
-                            <input type="radio" name="method">Free shipping
+                            <input type="radio" name="method" value="free">Free shipping
                         </label>
                     </li>
                     <li>
                         <label>
-                            <input type="radio" name="method"checked>Fast shipping
+                            <input type="radio" name="method" value="fast" checked>Fast shipping
                         </label>
                     </li>
                 </ul>
-            </div>
-            <div class="filter__amount">
-                <h3>Amount</h3>
-                <input type="button" value="0-5"></input>
-                <input type="button" value="10-20"></input>
-                <input type="button" value="20-50"></input>   
-            </div>
+            </fieldset>
+            <fieldset class="filter__amount">
+                <legend>Amount</legend>
+                <label>0-5<input type="radio" name="amount" value="0-5" checked></input></label>
+                <label>10-20<input type="radio" name="amount" value="10-20"></input></label>
+                <label>20-50<input type="radio" name="amount" value="20-50"></input></label>    
+            </fieldset>
             <button class="filter__apply" type="submit">Apply</button>     
           </form>
     </section>
     <section class="toys__content">
-        <div class="toys__content_box">
-            <div class="box-cards card__bag-chair">
-                <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="../image/bag_chair_cover.jpg" alt="bag chair cover" width="380" height="385"/>
-                <p>SHARKY BEAN BAG CHAIR COVER</p>
-                <p>$60.00 USD</p>
-            </div>
-            <div class="box-cards card__frames">
-                <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="../image/frames.jpg" alt="brass deco frames" width="380" height="385"/>
-                <p>BRASS DECO FRAMES</p>
-                <p>$66.00 USD</p>
-            </div>
-            <div class="box-cards card__apron">
-                <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="../image/apron.jpg" alt="cibo full apron" width="380" height="385"/>
-                <p>CIBO FULL APRON</p>
-                <p>$60.00 USD</p>
-            </div>
-            <div class="box-cards card__gumball-machine">
-                <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="../image/gam_machine.jpg" alt="gumble machine" width="380" height="385"/>
-                <p>GATCHA GATCHA GUMBALL MACHINE</p>
-                <p>$56.00 USD</p>
-            </div>
-            <div class="box-cards card__candle">
-                <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="../image/candle.jpg" alt="scented candle" width="380" height="385"/>
-                <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
-                <p>$29.00 USD</p>
-            </div>
-            <div class="box-cards card__tangle">
-                <div class="card__link"><a href="#">learn more</a></div>
-                <img class="box-cards__img" src="../image/tangle.jpg" alt="tangle spinning tea light" width="380" height="382"/>
-                <p>TANGLE SPINNING TEA LIGHT</p>
-                <p>$56.00 USD</p>
-            </div>
-        </div>
+        <ul class="toys__content_list">
+            <li class="toys__content_item item__bag-chair">
+                <div class="item__link"><a href="#">learn more</a></div>
+                <img class="item__img" src="../image/bag_chair_cover.jpg" alt="bag chair cover" width="380" height="385"/>
+                <p class="item__discription">SHARKY BEAN BAG CHAIR COVER</p>
+                <p class="item__cost">$60.00 USD</p>
+            </li>
+            <li class="toys__content_item item__frames">
+                <div class="item__link"><a href="#">learn more</a></div>
+                <img class="item__img" src="../image/frames.jpg" alt="brass deco frames" width="380" height="385"/>
+                <p class="item__discription">BRASS DECO FRAMES</p>
+                <p class="item__cost">$66.00 USD</p>
+            </li>
+            <li class="toys__content_item item__apron">
+                <div class="item__link"><a href="#">learn more</a></div>
+                <img class="item__img" src="../image/apron.jpg" alt="cibo full apron" width="380" height="385"/>
+                <p class="item__discription">CIBO FULL APRON</p>
+                <p class="item__cost">$60.00 USD</p>
+            </li>
+            <li class="toys__content_item item__gumball-machine">
+                <div class="item__link"><a href="#">learn more</a></div>
+                <img class="item__img" src="../image/gam_machine.jpg" alt="gumble machine" width="380" height="385"/>
+                <p class="item__discription">GATCHA GATCHA GUMBALL MACHINE</p>
+                <p class="item__cost">$56.00 USD</p>
+            </li>
+            <li class="toys__content_item item__candle">
+                <div class="item__link"><a href="#">learn more</a></div>
+                <img class="item__img" src="../image/candle.jpg" alt="scented candle" width="380" height="385"/>
+                <p class="item__discription">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                <p class="item__cost">$29.00 USD</p>
+            </li>
+            <li class="toys__content_item item__tangle">
+                <div class="item__link"><a href="#">learn more</a></div>
+                <img class="item__img" src="../image/tangle.jpg" alt="tangle spinning tea light" width="380" height="382"/>
+                <p class="item__discription">TANGLE SPINNING TEA LIGHT</p>
+                <p class="item__cost">$56.00 USD</p>
+            </li>
+        </ul>
         <nav class="toys__content_navigation">
             <button type="button" class="button_paginator btn--inactive" aria-label="scroll forward"></button>
             <button type="button" class="button_paginator btn--inactive">1</button>
