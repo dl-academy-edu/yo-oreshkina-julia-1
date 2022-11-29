@@ -53,53 +53,50 @@
     <section class="products">
         <h2 class="products__title">Category Products</h2>
         <ul class="products__list">
-            <li class="products__item">
-                <a class="products__link" href="#">
-                    <img class="products__item_img" src="./image/apparel-kids.png" alt="apparel kids" width="244" height="177">
-                APPAREL KIDS
-                </a>
+            <li class="products__item item_1">
+                <img class="products__item_img" src="./image/apparel-kids.png" alt="apparel kids" width="280" height="270">
+                <a class="products__link" href="#">APPAREL KIDS</a>
             </li>
-            <li class="products__item">
-                <a class="products__link" href="#">
-                    <img class="products__item_img" src="./image/sock.png" alt="holiday shop" width="208" height="244">
-                HOLIDAY SHOP
-                </a>
+            <li class="products__item item_2">
+                <img class="products__item_img" src="./image/sock.png" alt="holiday shop" width="208" height="244">
+                <a class="products__link" href="#">HOLIDAY SHOP</a>
             </li>
-            <li class="products__item">
-                <a class="products__link" href="#">
-                    <img class="products__item_img" src="./image/toy.png" alt="toys" width="270" height="270">
-                TOYS
-                </a>
+            <li class="products__item item_3">
+                <img class="products__item_img" src="./image/toy.png" alt="toys" width="270" height="270">
+                <a class="products__link" href="./pages/toys.html">TOYS</a>
             </li>
-            <li class="products__item">
-                <a class="products__link" href="#">
-                    <img class="products__item_img" src="./image/drowing.png" alt="accessories" width="240" height="250">
-                ACCESSORIES
-                </a>
+            <li class="products__item item_4">
+                <img class="products__item_img" src="./image/drowing.png" alt="accessories" width="240" height="250">
+                <a class="products__link" href="#">ACCESSORIES</a>
             </li>
         </ul>
-        <nav class="products__nav" aria-label="list of product categories">
-            <button type="button" class="button_paginator btn-prev" aria-label="scroll forward"></button>
-            <button type="button" class="button_paginator btn-next" aria-label="scroll back"></button>           
-        </nav>
-        <p class="products__info">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        <div class="products__nav_wrapper">
+            <nav class="products__nav" aria-label="list of product categories">
+                <button type="button" class="button_paginator btn-prev" aria-label="scroll forward"></button>
+                <button type="button" class="button_paginator btn-next" aria-label="scroll back"></button>           
+            </nav>
+            <p class="products__info">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        </div>
+        
     </section>
-    <section>
-        <img src="./image/photo.jpg" alt="designer DLK" width="480" height="559">
-        <h2>Delivery</h2>
-        <ul>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Guarantee</a></li>
-            <li><a href="#">Credit</a></li>
-        </ul>
-        <p>Some days i feel like i've been working on dlk my entire life and 
-            there are other days that i am completely shocked that four years
-            have flown by. It's simply magical.</p>
-        <p>What started as an outlet to deal  with the traumatic loss of my
-            husband, dlk has now become a truly happy place for me and
-            i have you and all of the beautiful designers that
-            we work with to thank!</p>
-        <a href="#">learn more</a>
+    <section class="services">
+        <img class="services__photo" src="./image/photo.jpg" alt="designer DLK" width="480" height="559">
+        <div class="services__info_wrapper">
+            <h2 class="services__info_title">Delivery</h2>
+            <ul class="services__info_list">
+                <li class="services__info_item item__active"><a class="services__link link__active" href="#">Delivery</a></li>
+                <li class="services__info_item"><a class="services__link" href="#">Guarantee</a></li>
+                <li class="services__info_item"><a class="services__link" href="#">Credit</a></li>
+            </ul>
+            <p class="services__info_delivery">Some days i feel like i've been working on dlk my entire life and 
+                there are other days that i am completely shocked that four years
+                have flown by. It's simply magical.</p>
+            <p class="services__info_delivery">What started as an outlet to deal  with the traumatic loss of my
+                husband, dlk has now become a truly happy place for me and
+                i have you and all of the beautiful designers that
+                we work with to thank!</p>
+            <a class="services__info_link" href="#">learn more</a>
+        </div>
     </section>
     <section class="partners">
         <h2 class="visually-hidden"></h2>
