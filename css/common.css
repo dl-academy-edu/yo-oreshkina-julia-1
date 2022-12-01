@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, "Segoe UI", 'Open Sans', 'Montserrat', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #1E0606;
+  }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1E0606;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;  
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    border-style: none;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    display: none;
+}
