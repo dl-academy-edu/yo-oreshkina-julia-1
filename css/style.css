@@ -1,50 +1,7 @@
-/*** HEADER ***/
-
-.header { 
-    margin: 50px 110px 129px 110px; 
-    display: flex;
-    flex: 0 1 auto;
-}
-
-.header__menu {
-    display: flex;
-    align-items:center;
-    padding-left: 40px;
-    flex-grow: 1;
-}
-
-.header__menu_list {
-    display: flex; 
-}
-
-.header__menu_item {
-    padding-left: 20px;
-}
-    
-.header__contact_link {
-    font-weight: bold;
-    font-style: normal;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    display: flex;
-    align-items: center;
-}
-
-.header__contact_link:before {
-    content: " ";
-    display: block;
-    width: 18px;
-    height: 18px;
-    margin-right: 23px;
-    background-image: url(../image/icons/search.svg);
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-}
-
 /*** BANNER ***/
 
 .banner__wrapper {
-    margin: 0 110px; 
+    padding: 0 110px; 
 } 
 
 .banner {
@@ -66,7 +23,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 60px;
-    line-height: 73px;
+    line-height: 74px;
     color: rgba(30, 6, 6, 0.05);
 }
 
@@ -90,7 +47,6 @@
     padding-left: 44px;
     padding-top: 92px;
     padding-bottom: 89px;
-    flex-grow: 2;
 }
 
 .banner__slide_img {
@@ -115,37 +71,14 @@
 }
 
 .banner__btn {
-    border: none;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    line-height: 22px;
-    color: #FFFFFF;
     width: 161px;
-    height: 40px;
-    background: #000000;
-}
-
-.banner__btn:hover {
-    cursor: pointer;
-    background: #C29974;
-}
-
-.banner__btn:active {
-    background: #CFAF91;
-}
-
-.banner__btn:disabled {
-    background: #C7C1C1;
 }
 
 .banner__delivery_info {
-    z-index: 2;
     margin: 0 auto;
     height: 39px;
     width: 1180px;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 12px;
     line-height: 40px;
@@ -157,14 +90,16 @@
 /*** Category Products ***/
 
 .products {
-    margin: 90px 110px 89px 110px; 
+    padding: 90px 110px; 
 }
 
 .products__list {
     padding-top: 30px;
     display: flex;
-    flex-wrap: wrap;
+    max-width: 1180px;
+    flex: wrap;
     justify-content: space-between;
+    /* gap: 20px; */  
 }
 
 .products__item {
@@ -201,7 +136,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 190px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
@@ -218,24 +153,31 @@
 
 .products__nav_wrapper {
     display: flex;
-    margin: 33px 0;
+    margin: 33px 0 0;
 }
 
 .button_paginator {
     width: 37px;
     height: 37px;
     border: none;
+    background-color: rgba(112, 187, 220, 0.2)
 }
 
-.button_paginator.btn-prev {
-    background: rgba(112, 187, 220, 0.2) url('../image/icons/vector-prev.svg') no-repeat;
-    background-position: 50% 50%;
+.btn__vector > path:hover {
+    cursor: pointer;
+    stroke: #C29974;
 }
 
-.button_paginator.btn-next {
-    background: rgba(112, 187, 220, 0.2) url('../image/icons/vector-next.svg') no-repeat;
-    background-position: 50% 50%;
+.btn__vector > path:active {
+    stroke: rgba(194, 153, 116);
+    opacity: 0.7; 
 }
+
+.btn__vector > path:disabled {
+    stroke: rgba(30, 6, 6);
+    opacity: 0.12; 
+}
+
 
 .products__info {
     padding-left: 20px;
@@ -246,7 +188,7 @@
 /*** SERVICES: DELIVERY ***/
 
 .services {
-    margin: 0 210px 0 110px;
+    padding: 0 210px 0 110px;
     max-width: 1080px;
     display: flex;
     justify-content: space-between;
@@ -290,24 +232,13 @@
 
 .services__info_link {
     margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
     width: 149px;
-    height: 40px;
-    background: #000000;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
 }
 
 /*** PARTNERS ***/
 
 .partners {
-    margin: 90px 110px;
+    padding: 90px 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,10 +246,8 @@
 
 /*** DLK CONTACTS ***/
 
-.box {
-    margin-left: 110px;
-    margin-bottom: 153px;
-    padding-top: 27px;
+.two__column {
+    padding-top: 25px;
     display: flex;
 }
 
@@ -345,19 +274,7 @@
 .buy__link {
     margin-top: 20px;
     margin-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
     width: 123px;
-    height: 40px;
-    background: #000000;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-
 }
 
 .about__title, .contacts__title {
@@ -378,111 +295,3 @@
 .contacts__map {
     margin: 10px 30px;
 }
-
-/*** FOOTER ***/
-
-.footer {
-    max-width: 1400px;
-    margin-top: auto;
-    background: #434343;
-}
-
-.wrapper {
-    padding-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom:1px solid #666666;
-}
-.wrapper > section {
-    width: calc(1/3*100% - (1 - 1/3)*20px);
-    padding-bottom: 13px;
-}
-
-.title {
-    height: 44px;
-    color:#AAAAAA;
-    border-bottom: 1px solid #666666;
-    margin-bottom: 30px;
-}
-
-.footer__item {
-    margin: 15px 0;
-}
-
-.footer__link {
-    color:#AAAAAA;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.footer__connect {
-    margin-bottom: 25px;
-}
-.connect__form {
-    display: flex;
-    height: 40px;
-}
-
-.connect__input {
-    border-style: none;
-    width: 287px;
-    padding-left: 15px;
-    background-color:#666666;
-}
-.connect__input::placeholder {
-    content:"Email";
-    color:#EBEBEB;
-
-}
-.connect__btn {
-    width: 81px;
-    height: 40px;
-    background-color:  #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.footer__connect_list {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.footer__connect_link{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    background-color: #666666;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size: 50% 50%;
-}
-
-.footer__connect_link.icon-facebook {
-    background-image: url('../image/icons/facebook.svg'); 
-}
-
-.footer__connect_link.icon-twitter {
-    background-image: url('../image/icons/twitter.svg'); 
-}
-
-.footer__connect_link.icon-pinterest {
-    background-image: url('../image/icons/pinterest.svg'); 
-}
-
-.footer__connect_link.icon-instagram {
-    background-image: url('../image/icons/instagram.svg'); 
-}
-
-
