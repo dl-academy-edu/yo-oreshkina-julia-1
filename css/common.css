@@ -6,7 +6,6 @@
 body {
     font-family: system-ui, "Segoe UI", 'Open Sans', 'Montserrat', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #1E0606;
-    position: relative;
   }
 
 li {
@@ -23,21 +22,18 @@ a {
     color: #1E0606;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
+    text-transform: uppercase;
     font-size: 40px;
     line-height: 44px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;  
-    font-style: normal;
-    font-weight: bold;
     font-size: 38px;
     line-height: 46px;
-    text-transform: uppercase;
     color: #1E0606;
 }
 
@@ -68,11 +64,7 @@ button {
     margin: 0 auto;
 }
 
-.visually-hidden {
-    display: none;
-}
-
-.modal__window.hidden {
+.visually-hidden, .modal__window.hidden {
     display: none;
 }
 
@@ -105,6 +97,7 @@ button {
 }
 
 /*** BREADCRUMBS ***/
+
 .breadcrumbs {
     display: flex;
     flex-direction: row;
@@ -149,13 +142,14 @@ button {
 }
 
 .header { 
-    padding: 50px 110px 129px 110px;
+    margin-top: 50px;
+    margin-bottom: 129px;
     display: flex;
     flex: 0 1 auto;
 }
 
 .indent {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .header__menu {
@@ -196,12 +190,10 @@ button {
 /*** FOOTER ***/
 
 .footer {
-    max-width: 1400px;
-    margin: 58px auto 0;
     background: #434343;
 }
 
-.wrapper {
+.free__column.wrapper {
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -436,7 +428,7 @@ button {
     justify-content: center;
     align-items:center;
     width: 100%;
-    height: 768px;
+    min-height: 768px;
     background: rgba(125, 151, 218, 0.8);
 }
 
@@ -506,6 +498,7 @@ button {
 }
 
 .label__checkbox {
+    position: inherit;
     display: flex;
     align-items:center;
     margin-left: 34px;
@@ -545,7 +538,6 @@ button {
 
 .submit__btn {
     width: 106px;
-    height: 40px;
 }
 
 .btn {
