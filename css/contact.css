@@ -1,0 +1,40 @@
+.contact__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 49px;
+    text-transform: uppercase;
+    word-spacing: 11px;
+}
+
+.contact__wrapper {
+    margin-top: 50px;
+    display: flex;
+    gap: 10%;
+}
+
+.label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1E0606;
+}
+
+.label__wrapper.dist {
+    gap: 3px;
+}
+
+.contact__info > p {
+    margin-bottom: 20px;
+}
+
+.contact__info > span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
+}

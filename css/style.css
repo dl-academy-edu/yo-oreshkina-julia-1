@@ -249,6 +249,7 @@
 .two__column {
     padding-top: 25px;
     display: flex;
+    margin-bottom: 155px;
 }
 
 .about {

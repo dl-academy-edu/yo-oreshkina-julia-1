@@ -72,9 +72,9 @@ button {
     display: none;
 }
 
-/* .modal__window.hidden {
+.modal__window.hidden {
     display: none;
-} */
+}
 
 .button {
     border: none;
@@ -104,12 +104,58 @@ button {
     background: #C7C1C1;
 }
 
+/*** BREADCRUMBS ***/
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+.breadcrumbs__item {
+    position: relative;
+}
+.breadcrumbs__link {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.breadcrumbs > li:last-child {
+    opacity: 0.5;
+} 
+
+.breadcrumbs > li:not(:last-child)::after{
+    content: ' ';
+    position: absolute;
+    top: 25%;
+    left: 150%;
+    width: 8px;
+    height: 12px;
+    background-image:url('../image/icons/vector-breadcrumbs.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
 /*** HEADER ***/
+
+.header__menu_link:hover, .header > a:hover {
+    opacity: 0.4;
+}
+
+.header__menu_link:active, .header > a:active {
+    opacity: 0.2;
+}
 
 .header { 
     padding: 50px 110px 129px 110px;
     display: flex;
     flex: 0 1 auto;
+}
+
+.indent {
+    padding-bottom: 60px;
 }
 
 .header__menu {
@@ -151,7 +197,7 @@ button {
 
 .footer {
     max-width: 1400px;
-    margin: 155px auto 0;
+    margin: 58px auto 0;
     background: #434343;
 }
 
@@ -212,6 +258,11 @@ button {
     color:#EBEBEB;
 
 }
+.connect__input:hover, .connect__input:active, .connect__input:focus {
+    border: 1px solid #FFFDFD;
+    outline: none;
+}
+
 .connect__btn {
     width: 81px;
     display: flex;
@@ -391,16 +442,17 @@ button {
 
 .form {
     box-sizing: border-box;
-    margin-left: 22px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* margin:113px 0 113px 360px; */
     padding: 42px 40px;
     max-height: 542px;
     max-width: 680px;
     background: #E5EAF8;
+}
 
+.left {
+    margin-left: 22px;
 }
 
 .label__wrapper {
@@ -419,10 +471,20 @@ button {
     margin: auto;
 }
 
-.label__wrapper > label {
+.window__label {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 16px;
+}
+
+.label__wrapper > input {
+    box-sizing:border-box;
+    padding-left: 20px;
+}
+
+.label__wrapper > textarea {
+    box-sizing:border-box;
+    padding-left: 20px;
 }
 
 .label__wrapper > input {
@@ -464,7 +526,7 @@ button {
     height: 17px;
     background-color:inherit; 
     border-radius: 3px;
-    box-shadow: 0 0 0 2px #C29974;   
+    box-shadow: 0 0 0 2px #C29974;  
 }
 
 .check__input:disabled + .check__box {
