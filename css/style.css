@@ -71,7 +71,7 @@
 }
 
 .banner__btn {
-    width: 161px;
+    min-width: 161px;
 }
 
 .banner__delivery_info {
@@ -94,7 +94,7 @@
 }
 
 .products__list {
-    padding-top: 30px;
+    margin-top: 30px;
     display: flex;
     max-width: 1180px;
     flex: wrap;
@@ -157,7 +157,7 @@
 }
 
 .button_paginator {
-    width: 37px;
+    width: 38px;
     height: 37px;
     border: none;
     background-color: rgba(112, 187, 220, 0.2)
@@ -196,18 +196,23 @@
 }
 
 .services__info_wrapper {
-    margin-top: 30px;
+    padding-top: 33px;
     max-width: 480px;
 }
 
 .services__info_title {
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
 .services__info_item {
     margin-left: -60px;
-    width: 326px;
+    max-width: 326px;
     height: 55px;
+}
+
+.services__info_item:hover {
+    background: rgba(112, 187, 220, 0.1);
+    cursor: pointer;
 }
 
 .services__info_item.item__active {
@@ -217,32 +222,39 @@
 .services__link {
     font-family: 'Crimson Text', serif;
     font-style: italic;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 58px;
     padding-left: 60px;
 }
 
 .services__link.link__active {
     font-weight: bold;
+    font-size: 28px;
 }
 
-.services__info_delivery {
+.info__delivery_box {
+    margin-top: 20px;
+}
+
+.info__delivery {
     box-sizing: content-box;
-    margin-top: 18px;
     line-height: 22px;
+    padding-bottom: 18px;
 }
 
 .services__info_link {
-    margin-top: 25px;
-    width: 149px;
+    margin-top: 5px;
+    max-width: 149px;
     letter-spacing: 1px;
 }
 
 /*** PARTNERS ***/
 
 .partners {
-    padding: 90px 110px;
+    margin-top: 90px;
+    margin-bottom: 90px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -250,13 +262,13 @@
 /*** DLK CONTACTS ***/
 
 .two__column {
-    padding-top: 25px;
+    padding-top: 27px;
     display: flex;
-    margin-bottom: 156px;
+    margin-bottom: 155px;
 }
 
 .about {
-    width: 543px;
+    max-width: 543px;
     min-height: 228px;
     background-color:#E1F0F7;
     margin-right: 56px;
@@ -276,7 +288,7 @@
 }
 
 .buy__link {
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: 30px;
     width: 123px;
     letter-spacing: 1px;

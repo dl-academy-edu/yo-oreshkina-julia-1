@@ -79,7 +79,7 @@ button {
     font-weight: bold;
     line-height: 22px;
     color: #FFFFFF;
-    height: 40px;
+    min-height: 40px;
     background: #000000;
 }
 
@@ -256,7 +256,7 @@ button {
 }
 
 .connect__btn {
-    width: 81px;
+    min-width: 81px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,32 +322,32 @@ button {
 .rating {
     display: flex;
 }
-.rating:hover {
-    cursor:pointer;
-    color:#C29974;
-}
 
 .rating__caption {
-    padding-right: 25px;
+    padding-right: 28px;
 }
 
 
 .rating-group {
-    margin-top: 3px;
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
     font-size: 16px;
     line-height: 22px;
-    width: 85px;
+    width: 100px;
     height: 16px;
-    background-image:url('../image/icons/star.svg');
-    background-position:center;
-    background-size: 17px auto;
-    background-repeat:repeat-x; 
+}
+
+.rating__star::before {
+    content: url('../image/icons/star.svg');
+    width: 17px;
+    height: 16px;
+    margin-right: 3px;
 }
 
 .rating__input {
-    -webkit-appearance: none;
+   -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     position: absolute;
@@ -356,52 +356,52 @@ button {
     width: 17px;
     height: 16px;
     font-size: inherit;
-    background-size: 17px auto;
-    background-repeat:repeat-x; 
 }
 
 .rating__input:focus {
     outline: none;
 }
 
-.rating__input:checked {
-    background-image:url('../image/icons/star-on.svg');
+.rating__input:checked + .rating__star::before {
+    content: url('../image/icons/star-on.svg');
 }
 
-.rating__input:hover {
-    background-image:url('../image/icons/star-hover.svg');
+.rating__input:hover + .rating__star::before {
+    content: url('../image/icons/star-hover.svg');
 }
 
-.rating__input:hover ~ .rating__input {
-    background-image:url('../image/icons/star.svg')
+/* НЕ РАБОТАЕТ. Надо найти другой способ сохранять прогресс в состоянии checked
+и hover */
+/* .rating__input:hover ~ .rating__input + .rating__star::before {
+    content: url('../image/icons/star.svg');
 }
 
-.rating__input:hover ~ .rating__input:checked {
-    background-image:url('../image/icons/star.svg')
-}
+.rating__input:hover ~ .rating__input:checked + .rating__star::before {
+    content: url('../image/icons/star.svg');
+} */
 
 .rating__input:nth-of-type(1) {
-    width: 17px;
+    width: 20px;
     z-index: 5;
 }
 
 .rating__input:nth-of-type(2) {
-    width: 34px;
+    width: 40px;
     z-index: 4;
 }
 
 .rating__input:nth-of-type(3) {
-    width: 51px;
+    width: 60px;
     z-index: 3;
 }
 
 .rating__input:nth-of-type(4) {
-    width: 68px;
+    width: 80px;
     z-index: 2;
 }
 
 .rating__input:nth-of-type(5) {
-    width: 85px;
+    width: 100px;
     z-index: 1;
 }
 
@@ -537,7 +537,7 @@ button {
 }
 
 .submit__btn {
-    width: 106px;
+    min-width: 106px;
 }
 
 .btn {
