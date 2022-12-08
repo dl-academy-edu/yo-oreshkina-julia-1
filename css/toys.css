@@ -1,0 +1,271 @@
+.toys__title {
+margin-bottom: 20px;
+}
+
+.filter {
+    margin-top: 50px;
+    padding-top: 42px;
+    padding-bottom: 25px;
+    background: rgba(125, 151, 218, 0.2);
+}
+
+.filter__form {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter__subtitle {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606; 
+    margin-bottom: 15px;
+}
+
+.label {
+    font-family: 'Open Sans';
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/*** COST ***/
+
+.filter__cost {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.range-label {
+    margin-top: 5px;
+    word-spacing: 165px;
+}
+
+.range-field {
+    margin-left: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    width: 188px;
+    height: 4px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.range-field::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width:24px;
+    height: 24px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 8px solid rgba(194, 153, 116, 1);
+    cursor: pointer;
+  }
+
+/*** COLOR ***/
+
+.filter__color {
+    margin-left: 97px;
+}
+
+.checkbox__item {
+    margin-bottom: 15px;
+}
+
+.label__checkbox.ind {
+    margin-left: 28px;
+}
+
+.check__box.ind {
+    margin-left: -28px;
+}
+
+/*** DELIVERY ***/
+
+.filter__delivery {
+    margin-left: 124px;
+}
+
+.delivery__item {
+    margin-bottom: 10px;
+}
+
+.label__delivery {
+    position: inherit;
+    display: flex;
+    align-items:center;
+    margin-left: 30px;
+}
+
+.radio__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.radio__box {
+    position: absolute;
+    margin-left: -30px;
+    width: 17px;
+    height: 17px;
+    background-color:inherit; 
+    border-radius: 50%;
+    border: 2px solid #C29974; 
+}
+
+.radio__input:disabled + .radio__box {
+    border: 2px solid #E1CDBA;
+}
+
+.radio__input:checked + .radio__box {
+    background-color:#C29974;
+    box-shadow: inset 0 0 0 3px #FFFFFF;
+}
+
+.radio__input:hover + .radio__box {
+    cursor:pointer;
+}
+
+/*** AMOUNT ***/
+
+.filter__amount {
+    margin-left: 70px;
+    margin-right: 60px;
+}
+
+.amount__input_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #FFFFFF;
+}
+.amount__input_wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 80px;
+    height: 35px;
+    position: relative;
+    z-index: 0;
+}  
+
+.amount__label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 1;
+    width: 80px;
+    height: 35px;
+}
+
+
+.amount__input {
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 35px;
+    height: 35px;
+    z-index: 2;
+}
+
+.amount__input:checked + .amount__label {
+    background: #F3D0DB;
+}
+
+/* Уточнить поведение hover */
+.amount__input:hover + .amount__label {
+    background: #F3D0DB;
+    cursor:pointer;
+}
+
+.filter__apply {
+    min-width: 95px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+/*** TOYS ***/
+
+.toys__content {
+    margin-top: 61px;
+}
+
+.toys__content_list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.toys__content_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item__link {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 21%;
+    left: 23%;
+    width: 207px;
+    height: 207px;
+    background-color: #E5EAF8;
+    opacity: 0.9; 
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    z-index: -1;
+}
+
+/* Проверить поведение hover */
+.item__img:hover + .item__link {
+    z-index: 0;
+}
+
+.item__img:active + .item__link {
+    z-index: 0;
+    opacity: 0.67;
+}
+
+.item__img {
+    margin-bottom: 30px;
+}
+
+.item__discription {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.item__cost {
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.toys__content_nav {
+    margin-top: 42px;
+    margin-bottom: 58px;
+}
+
+
+
+
+
+
+

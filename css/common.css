@@ -53,6 +53,7 @@ img {
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
 button {
@@ -123,7 +124,7 @@ button {
     content: ' ';
     position: absolute;
     top: 25%;
-    left: 150%;
+    left: 144%;
     width: 8px;
     height: 12px;
     background-image:url('../image/icons/vector-breadcrumbs.svg');
@@ -568,7 +569,7 @@ button {
 }
 
 .check__input:checked + .check__box {
-    background-color:inherit;
+    background-color:#FFFFFF;;
     background-image: url('../image/icons/vector-check.svg');
     background-size:cover;
 }

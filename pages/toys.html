@@ -4,189 +4,236 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/toys.css">
     <title>Toys</title>
 </head>
 <body>
-    <header class="header">
-        <a href="/index.html">
-            <img class="header_logo" src="" alt="DLK logo">
+    <header class="container header indent">
+        <a class="header__link" href="/index.html">
+            <img class="header__logo" src="../image/icons/dlk-logo.svg" alt="DLK logo">
         </a>
-        <nav class="header_menu">
+        <nav class="header__menu">
             <ul class="header__menu_list">
-                <li class="header__menu_item"><a class="header__menu_link" href="/pages/blog.html" target="_blank">BLOG</a></li>
-                <li class="header__menu_item"><a class="header__menu_link" href="/pages/catalog.html" target="_blank">CATALOG</a></li>
-                <li class="header__menu_item"><a class="header__menu_link" href="#about">ABOUT US</a></li><!-- здесь исправить ссылку -->
+                <li class="header__menu_item">
+                    <a class="header__menu_link" href="/pages/blog.html" target="_blank">BLOG</a>
+                </li>
+                <li class="header__menu_item">
+                    <a class="header__menu_link" href="/pages/catalog.html" target="_blank">CATALOG</a>
+                </li>
+                <li class="header__menu_item">
+                    <a class="header__menu_link" href="#">ABOUT US</a>
+                </li>
             </ul>
         </nav>
-        <img class="header__contact_icon" src="../image/icons/search.svg" alt="icon_search">
-        <a class="header__contact_link" href="/pages/contact.html">CONTACT US</a>
+        <a class="header__contact_link icon-search" href="/pages/contact.html">CONTACT US</a>
     </header>
-    <h2 class="toys__title">Toy for kids</h2>
-    <a class="breadcrumbs_one" href="#">Home</a> <!-- Это ссылка на основную страницу -->
-        <!--здесь иконка стрелки в виде псевдоэлемента-->
-        <a class="breadcrumbs_two" href="/pages/catalog.html">Catalog</a>
-        <!--здесь иконка стрелки в виде псевдоэлемента-->
-        <a class="breadcrumbs_three" href="#">Toys</a>
+    <div class="container">
+        <h1 class="toys__title">Toy for kids</h1>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../pages/catalog.html">Catalog</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Toys</a></li>
+        </ul>
+    </div>
     <section class="filter">
-        <form action="" method="get"> <!-- не уверена -->
+        <form class="container filter__form" action="" method="get"> <!-- не уверена -->
             <div class="filter__cost">
-                <h3>Cost</h3>
-                <label>0<input type="range" name="cost" step="200" min="0" max="500">500</label>
+                <h3 class="filter__subtitle">Cost</h3>
+                <input class="range-field" type="range" id="range" name="cost" step="1" min="0" max="500">
+                <label class="label range-label" for="range">0 500</label>
             </div>
             <fieldset class="filter__color">
-                <legend>Color</legend>
-                <ul>
-                    <li class="checkbox">
-                        <label>
-                            <input type="checkbox" name="color" value="black">Black
+                <legend class="filter__subtitle">Color</legend>
+                <ul class="wrapper__checkbox">
+                    <li class="checkbox__item">
+                        <label class="label label__checkbox ind">
+                            <input class="check__input" type="checkbox" name="color" value="black">
+                            <span class="check__box ind"></span>Black
                         </label>
                     </li>
-                    <li class="checkbox">
-                        <label>
-                            <input type="checkbox" name="color" value="blue">Blue
+                    <li class="checkbox__item">
+                        <label class="label label__checkbox ind">
+                            <input class="check__input" type="checkbox" name="color" value="blue">
+                            <span class="check__box ind"></span>Blue
                         </label>
                     </li>
-                    <li class="checkbox">
-                        <label>
-                            <input type="checkbox" name="color" value="green">Green
+                    <li class="checkbox__item">
+                        <label class="label label__checkbox ind">
+                            <input class="check__input" type="checkbox" name="color" value="green">
+                            <span class="check__box ind"></span>Green
                         </label>
                     </li>
-                    <li class="checkbox">
-                        <label>
-                            <input type="checkbox" name="color" value="white">White
+                    <li class="checkbox__item">
+                        <label class="label label__checkbox ind">
+                            <input class="check__input" type="checkbox" name="color" value="white">
+                            <span class="check__box ind"></span>White
                         </label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="filter__delivery">
-                <legend>Delivery</legend>
+                <legend class="filter__subtitle">Delivery</legend>
                 <ul>
-                    <li>
-                        <label>
-                            <input type="radio" name="method" value="free">Free shipping
+                    <li class="delivery__item">
+                        <label class="label label__delivery">
+                            <input class="radio__input" type="radio" name="method" value="free">
+                            <span class="radio__box"></span>Free shipping
                         </label>
                     </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="method" value="fast" checked>Fast shipping
+                    <li class="delivery__item">
+                        <label class="label label__delivery">
+                            <input class="radio__input" type="radio" name="method" value="fast" checked>
+                            <span class="radio__box"></span>Fast shipping
                         </label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="filter__amount">
-                <legend>Amount</legend>
-                <label>0-5<input type="radio" name="amount" value="0-5" checked></input></label>
-                <label>10-20<input type="radio" name="amount" value="10-20"></input></label>
-                <label>20-50<input type="radio" name="amount" value="20-50"></input></label>    
+                <legend class="filter__subtitle">Amount</legend>
+                <div class="amount__input_wrapper">
+                <div>
+                    <input class="amount__input" type="radio" id="amount" name="amount" value="0-5" checked></input>
+                    <label class="amount__label" for="amount">0-5</label>
+                </div>
+                <div> 
+                    <input class="amount__input" type="radio" id="amount" name="amount" value="10-20"></input>
+                    <label class="amount__label" for="amount">10-20</label>
+                </div>
+                <div>
+                    <input class="amount__input" type="radio" id="amount" name="amount" value="20-50"></input>
+                    <label class="amount__label" for="amount">20-50</label> 
+                </div>
+            </div>
             </fieldset>
-            <button class="filter__apply" type="submit">Apply</button>     
-          </form>
+            <button class="button filter__apply" type="submit">Apply</button>     
+        </form>
     </section>
-    <section class="toys__content">
-        <ul class="toys__content_list">
-            <li class="toys__content_item item__bag-chair">
-                <div class="item__link"><a href="#">learn more</a></div>
-                <img class="item__img" src="../image/bag_chair_cover.jpg" alt="bag chair cover" width="380" height="385"/>
-                <p class="item__discription">SHARKY BEAN BAG CHAIR COVER</p>
-                <p class="item__cost">$60.00 USD</p>
-            </li>
-            <li class="toys__content_item item__frames">
-                <div class="item__link"><a href="#">learn more</a></div>
-                <img class="item__img" src="../image/frames.jpg" alt="brass deco frames" width="380" height="385"/>
-                <p class="item__discription">BRASS DECO FRAMES</p>
-                <p class="item__cost">$66.00 USD</p>
-            </li>
-            <li class="toys__content_item item__apron">
-                <div class="item__link"><a href="#">learn more</a></div>
-                <img class="item__img" src="../image/apron.jpg" alt="cibo full apron" width="380" height="385"/>
-                <p class="item__discription">CIBO FULL APRON</p>
-                <p class="item__cost">$60.00 USD</p>
-            </li>
-            <li class="toys__content_item item__gumball-machine">
-                <div class="item__link"><a href="#">learn more</a></div>
-                <img class="item__img" src="../image/gam_machine.jpg" alt="gumble machine" width="380" height="385"/>
-                <p class="item__discription">GATCHA GATCHA GUMBALL MACHINE</p>
-                <p class="item__cost">$56.00 USD</p>
-            </li>
-            <li class="toys__content_item item__candle">
-                <div class="item__link"><a href="#">learn more</a></div>
-                <img class="item__img" src="../image/candle.jpg" alt="scented candle" width="380" height="385"/>
-                <p class="item__discription">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                <p class="item__cost">$29.00 USD</p>
-            </li>
-            <li class="toys__content_item item__tangle">
-                <div class="item__link"><a href="#">learn more</a></div>
-                <img class="item__img" src="../image/tangle.jpg" alt="tangle spinning tea light" width="380" height="382"/>
-                <p class="item__discription">TANGLE SPINNING TEA LIGHT</p>
-                <p class="item__cost">$56.00 USD</p>
-            </li>
-        </ul>
-        <nav class="toys__content_navigation">
-            <button type="button" class="button_paginator btn--inactive" aria-label="scroll forward"></button>
-            <button type="button" class="button_paginator btn--inactive">1</button>
-            <button type="button" class="button_paginator btn--active">2</button>
-            <button type="button" class="button_paginator btn--active">3</button>
-            <button type="button" class="button_paginator btn--active">4</button>
-            <button type="button" class="button_paginator btn--inactive" aria-label="scroll back"></button>
-        </nav>   
-    </section>
+    <main class="container">
+        <section class="toys__content">
+            <ul class="toys__content_list">
+                <li class="toys__content_item item__bag-chair">
+                    <img class="item__img" src="../image/bag_chair_cover.jpg" alt="bag chair cover" width="380" height="385"/>
+                    <a class="item__link" href="#">learn more</a>
+                    <p class="item__discription">SHARKY BEAN BAG CHAIR COVER</p>
+                    <p class="item__cost">$60.00 USD</p>
+                </li>
+                <li class="toys__content_item item__frames">
+                    <img class="item__img" src="../image/frames.jpg" alt="brass deco frames" width="380" height="385"/>
+                    <a class="item__link" href="#">learn more</a>
+                    <p class="item__discription">BRASS DECO FRAMES</p>
+                    <p class="item__cost">$66.00 USD</p>
+                </li>
+                <li class="toys__content_item item__apron">
+                    <img class="item__img" src="../image/apron.jpg" alt="cibo full apron" width="380" height="385"/>
+                    <a class="item__link" href="#">learn more</a>
+                    <p class="item__discription">CIBO FULL APRON</p>
+                    <p class="item__cost">$60.00 USD</p>
+                </li>
+                <li class="toys__content_item item__gumball-machine">
+                    <img class="item__img" src="../image/gam_machine.jpg" alt="gumble machine" width="380" height="385"/>
+                    <a class="item__link" href="#">learn more</a>
+                    <p class="item__discription">GATCHA GATCHA GUMBALL MACHINE</p>
+                    <p class="item__cost">$56.00 USD</p>
+                </li>
+                <li class="toys__content_item item__candle">
+                    <img class="item__img" src="../image/candle.jpg" alt="scented candle" width="380" height="385"/>
+                    <a class="item__link" href="#">learn more</a>
+                    <p class="item__discription">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                    <p class="item__cost">$29.00 USD</p>
+                </li>
+                <li class="toys__content_item item__tangle">
+                    <img class="item__img" src="../image/tangle.jpg" alt="tangle spinning tea light" width="380" height="382"/>
+                    <a class="item__link" href="#">learn more</a>
+                    <p class="item__discription">TANGLE SPINNING TEA LIGHT</p>
+                    <p class="item__cost">$56.00 USD</p>
+                </li>
+            </ul>
+            <nav class="toys__content_nav navigation">
+                <a href="#">
+                    <svg class="nav__link-vector" width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+                    </svg>
+                </a>
+                    <div>
+                        <a class="nav__link link--active" href="#">1</a>
+                        <a class="nav__link" href="#">2</a>
+                        <a class="nav__link" href="#">3</a>
+                        <a class="nav__link" href="#">4</a>
+                    </div>
+                <a href="#">
+                    <svg class="nav__link-vector" width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+                    </svg>
+                </a>
+            </nav>   
+        </section>
+    </main>
     <footer class="footer">
-        <section class="footer__nav">
-            <p class="footer__nav_list title">Navigation</p>
-            <ul class="footer__nav_list">
-                <li class="footer__nav_item"><a class="footer__nav_link" href="#">About Us</a></li>
-                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Design Services</a></li>
-                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Blog</a></li>
-                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Featured On</a></li>
-                <li class="footer__nav_item"><a class="footer__nav_link" href="#">2018 Holiday Catalog</a></li>
-                <li class="footer__nav_item"><a class="footer__nav_link" href="#">Shop By Designer</a></li>
-            </ul>
-        </section>
-        <section class="footer__info">
-            <p class="footer__info title">Customer Information</p>
-            <ul class="footer__info_list">
-                <li class="footer__info_item"><a class="footer__info_link" href="#">Contact Us</a></li>
-                <li class="footer__info_item"><a class="footer__info_link" href="#">Sale Exclusions</a></li>
-                <li class="footer__info_item"><a class="footer__info_link" href="#">Shipping & Returns</a></li>
-                <li class="footer__info_item"><a class="footer__info_link" href="#">Terms & Conditions</a></li>
-                <li class="footer__info_item"><a class="footer__info_link" href="#">Privacy Policy</a></li>
-                <li class="footer__info_item"><a class="footer__info_link" href="#">Search</a></li>
-            </ul>
-        </section>
-        <section class="footer__connect">
-            <p class="footer__connect title">Connect</p>
-            <form action="" method="post">
-                <input type="email" name="email" placeholder="Email">
-                <button type="submit">Join</button>
-            </form>
-            <ul class="footer__connect_list">
-                <li class="footer__connect_item"><a class="footer__connect_link icon-facebook" href="https://facebook.com/" aria-label="share on facebook"></a></li>
-                <li class="footer__connect_item"><a class="footer__connect_link icon-twitter" href="https://twitter.com/" aria-label="share on twitter"></a></li>
-                <li class="footer__connect_item"><a class="footer__connect_link icon-pinterest" href="https://pinterest.com/" aria-label="share on pinterest"></a></li>
-                <li class="footer__connect_item"><a class="footer__connect_link icon-instagram" href="https://instagram.com/" aria-label="share on instagram"></a></li>
-            </ul>
-        </section>
-        <fieldset class="rating">
-            <legend class="rating__caption">Company Rating</legend>
-            <div class="rating-group">
-                <input class="rating__input" type="radio" name="star" id="star-1" value="2">
-                <label class="rating__star" aria-label="terribly" for="star-1"></label>
+        <div class="container">
+            <div class="free__column wrapper ">
+                <section class="footer__nav column">
+                    <p class="footer__nav_list title">Navigation</p>
+                    <ul class="footer__nav_list">
+                        <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="../pages/blog.html">Blog</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Design Services</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Featured On</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">2018 Holiday Catalog</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Shop By Designer</a></li>
+                    </ul>
+                </section>
+                <section class="footer__info column">
+                    <p class="footer__info title">Customer Information</p>
+                    <ul class="footer__info_list">
+                        <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Sale Exclusions</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Shipping & Returns</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Terms & Conditions</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Search</a></li>
+                    </ul>
+                </section>
+                <section class="column">
+                    <p class="footer__connect title">Connect</p>
+                    <form class="connect__form" action="" method="post">
+                        <input class="connect__input" type="email" name="email" placeholder="Email">
+                        <button class="button connect__btn" type="submit">Join</button>
+                    </form>
+                    <ul class="footer__connect_list">
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-facebook" href="https://facebook.com/" aria-label="share on facebook"></a></li>
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-twitter" href="https://twitter.com/" aria-label="share on twitter"></a></li>
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-pinterest" href="https://pinterest.com/" aria-label="share on pinterest"></a></li>
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-instagram" href="https://instagram.com/" aria-label="share on instagram"></a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="box free__column">
+                <section class="rating column">
+                    <p class="rating__caption">Company Rating</p>
+                    <div class="rating-group">
+                        <input class="rating__input" type="radio" name="star" id="star-1" value="1">
+                        <label class="rating__star" aria-label="terribly" for="star-1"></label>
 
-                <input class="rating__input" type="radio" name="star" id="star-2" value="1">
-                <label class="rating__star" aria-label="below average" for="star-2"></label>
+                        <input class="rating__input" type="radio" name="star" id="star-2" value="2">
+                        <label class="rating__star" aria-label="below average" for="star-2"></label>
 
-                <input class="rating__input" type="radio" name="star" id="star-3" value="3">
-                <label class="rating__star" aria-label="acceptable" for="star-3"></label>
+                        <input class="rating__input" type="radio" name="star" id="star-3" value="3">
+                        <label class="rating__star" aria-label="acceptable" for="star-3"></label>
 
-                <input class="rating__input" type="radio" name="star" id="star-4" value="4">
-                <label class="rating__star" aria-label="good" for="star-4"></label>
+                        <input class="rating__input" type="radio" name="star" id="star-4" value="4">
+                        <label class="rating__star" aria-label="good" for="star-4"></label>
 
-                <input class="rating__input" type="radio" name="star" id="star-5" value="5">
-                <label class="rating__star" aria-label="excellent" for="star-5"></label>
-            </div> 
-        </fieldset>
-        <p>Copyright &copy; 2018 Dlk • Design Life Kids;</p>
-        <a href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
+                        <input class="rating__input" type="radio" name="star" id="star-5" value="5">
+                        <label class="rating__star" aria-label="excellent" for="star-5"></label>
+                    </div> 
+                </section>
+                <p class="column copyright">Copyright &copy; 2018 Dlk • Design Life Kids;</p>
+                <a class="column designer" href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
+            </div>
+        </div>
     </footer>  
 </body>
 </html>
