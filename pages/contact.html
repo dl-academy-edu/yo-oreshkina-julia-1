@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact us</title>
+</head>
+<body>
+    <header class="container header indent">
+        <a class="header__link" href="/index.html">
+            <img class="header__logo" src="../image/icons/dlk-logo.svg" alt="DLK logo">
+        </a>
+        <nav class="header__menu">
+            <ul class="header__menu_list">
+                <li class="header__menu_item">
+                    <a class="header__menu_link" href="../pages/blog.html" target="_blank">BLOG</a>
+                </li>
+                <li class="header__menu_item">
+                    <a class="header__menu_link" href="/pages/catalog.html" target="_blank">CATALOG</a>
+                </li>
+                <li class="header__menu_item">
+                    <a class="header__menu_link" href="#">ABOUT US</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="header__contact_link icon-search" href="/pages/contact.html">CONTACT US</a>
+    </header>
+    <main class="container">
+        <h1 class="contact__title">CONTACT US</h1>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Home</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Contact Us</a></li>
+        </ul>
+        <div class="contact__wrapper">
+            <form class="form" method="POST" action="#">
+                <div class="label__wrapper dist">
+                    <label class="label" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Ivan Ivanov" required>
+                </div>
+                <div class="column__two-input">
+                    <div class="label__wrapper dist two-input">
+                        <label class="label" for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" required >
+                    </div>
+                    <div class="label__wrapper dist two-input">
+                        <label class="label" for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="label__wrapper dist wrapper__message">
+                    <label class="label" for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="8"></textarea>
+                </div>
+                <div class="label__wrapper dist wrapper__checkbox">
+                    <label class="label label__checkbox">
+                        <input class="check__input" type="checkbox" checked>
+                        <span class="check__box"></span>
+                        By clicking on the button, you consent to the processing of your personal data
+                    </label>
+                </div>
+                <button class="button submit__btn" type="submit">submit</button>
+            </form>
+            <section class="contact__info">
+                <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <span>An expert is waiting to help you!</span>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper free__column">
+                <section class="footer__nav column">
+                    <p class="footer__nav_list title">Navigation</p>
+                    <ul class="footer__nav_list">
+                        <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="./pages/blog.html">Blog</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Design Services</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Featured On</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">2018 Holiday Catalog</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Shop By Designer</a></li>
+                    </ul>
+                </section>
+                <section class="footer__info column">
+                    <p class="footer__info title">Customer Information</p>
+                    <ul class="footer__info_list">
+                        <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Sale Exclusions</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Shipping & Returns</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Terms & Conditions</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Search</a></li>
+                    </ul>
+                </section>
+                <section class="column">
+                    <p class="footer__connect title">Connect</p>
+                    <form class="connect__form" action="" method="post">
+                        <input class="connect__input" type="email" name="email" placeholder="Email">
+                        <button class="button connect__btn" type="submit">Join</button>
+                    </form>
+                    <ul class="footer__connect_list">
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-facebook" href="https://facebook.com/" aria-label="share on facebook"></a></li>
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-twitter" href="https://twitter.com/" aria-label="share on twitter"></a></li>
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-pinterest" href="https://pinterest.com/" aria-label="share on pinterest"></a></li>
+                        <li class="footer__connect_item"><a class="footer__connect_link icon-instagram" href="https://instagram.com/" aria-label="share on instagram"></a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="box free__column">
+            <section class="rating column">
+                <p class="rating__caption">Company Rating</p>
+                <div class="rating-group">
+                    <input class="rating__input" type="radio" name="star" id="star-1" value="1">
+                    <label class="rating__star" aria-label="terribly" for="star-1"></label>
+
+                    <input class="rating__input" type="radio" name="star" id="star-2" value="2">
+                    <label class="rating__star" aria-label="below average" for="star-2"></label>
+
+                    <input class="rating__input" type="radio" name="star" id="star-3" value="3">
+                    <label class="rating__star" aria-label="acceptable" for="star-3"></label>
+
+                    <input class="rating__input" type="radio" name="star" id="star-4" value="4">
+                    <label class="rating__star" aria-label="good" for="star-4"></label>
+
+                    <input class="rating__input" type="radio" name="star" id="star-5" value="5">
+                    <label class="rating__star" aria-label="excellent" for="star-5"></label>
+                </div> 
+            </section>
+            <p class="column copyright">Copyright &copy; 2018 Dlk • Design Life Kids;</p>
+            <a class="column designer" href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

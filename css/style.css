@@ -1,0 +1,314 @@
+/*** BANNER ***/
+
+.banner__wrapper {
+    padding: 0 110px; 
+} 
+
+.banner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EEE4DB;
+}
+
+.banner__switch {
+    padding: 18px 0 0 28px;  
+}
+
+.banner__slide_switch {
+    line-height: 14px;
+}
+
+.banner__slide_number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 74px;
+    color: rgba(30, 6, 6, 0.05);
+}
+
+.switch__btn {
+    margin-left: 3px;
+    width: 31px;
+    height: 3px;
+    border: none;
+    background: #D6CAC2;
+}
+.switch__btn.btn_1 {
+    background: #725F5B;
+}
+
+.switch__btn:hover {
+    cursor: pointer;
+    background: #725F5B;
+}
+
+.banner__slide {
+    padding-left: 44px;
+    padding-top: 92px;
+    padding-bottom: 89px;
+}
+
+.banner__slide_img {
+    position:absolute;
+    top: -21.5%;
+    right: 8.3%;   
+}
+
+.banner__slide_title {
+    margin: 0;
+    max-width: 307px;
+}
+
+.banner__slide_info {
+    margin: 17px 0 20px 0;
+    font-family: 'Crimson Text', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.banner__btn {
+    min-width: 161px;
+}
+
+.banner__delivery_info {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #C29974;
+}
+
+/*** Category Products ***/
+
+.products {
+    margin-top: 90px;
+    margin-bottom: 91px;
+}
+
+.products__list {
+    margin-top: 30px;
+    display: flex;
+    max-width: 1180px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 20px; */  
+}
+
+.products__item {
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 280px;
+    height: 270px;
+}
+
+.products__item.item_1 {
+    background-color: #DBE4DB;
+}
+
+.products__item.item_2 {
+    background-color: #EADDD3;
+}
+
+.products__item.item_3 {
+    background-color: #F8F2DA;
+}
+.products__item.item_4 {
+    background-color: #D5D4E1;
+}
+
+.products__item_img {
+    z-index: 0;
+}
+
+.products__link {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 190px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    z-index: 1;
+}
+
+.products__link:active, .products__link:hover {
+    cursor:pointer;
+    text-decoration-line: underline;
+}
+
+.products__nav_wrapper {
+    display: flex;
+    margin: 33px 0 0;
+}
+
+.button_paginator {
+    width: 38px;
+    height: 37px;
+    border: none;
+    background-color: rgba(112, 187, 220, 0.2)
+}
+
+.btn__vector > path:hover {
+    cursor: pointer;
+    stroke: #C29974;
+}
+
+.btn__vector > path:active {
+    stroke: rgba(194, 153, 116);
+    opacity: 0.7; 
+}
+
+.btn__vector > path:disabled {
+    stroke: rgba(30, 6, 6);
+    opacity: 0.12; 
+}
+
+
+.products__info {
+    padding-left: 20px;
+    margin: 0;
+    max-width: 580px;
+    line-height: 20px;
+}
+
+/*** SERVICES: DELIVERY ***/
+
+.services {
+    padding: 0 210px 0 110px;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__info_wrapper {
+    padding-top: 33px;
+    max-width: 480px;
+}
+
+.services__info_title {
+    margin-bottom: 3px;
+}
+
+.services__info_item {
+    margin-left: -60px;
+    max-width: 326px;
+    height: 55px;
+}
+
+.services__info_item:hover {
+    background: rgba(112, 187, 220, 0.1);
+    cursor: pointer;
+}
+
+.services__info_item.item__active {
+    background: rgba(112, 187, 220, 0.2);
+}
+
+.services__link {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 58px;
+    padding-left: 60px;
+}
+
+.services__link.link__active {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.info__delivery_box {
+    margin-top: 20px;
+}
+
+.info__delivery {
+    box-sizing: content-box;
+    line-height: 22px;
+    padding-bottom: 18px;
+}
+
+.services__info_link {
+    margin-top: 5px;
+    max-width: 149px;
+    letter-spacing: 1px;
+}
+
+/*** PARTNERS ***/
+
+.partners {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*** DLK CONTACTS ***/
+
+.two__column {
+    padding-top: 27px;
+    display: flex;
+    margin-bottom: 155px;
+}
+
+.about {
+    max-width: 543px;
+    min-height: 228px;
+    background-color:#E1F0F7;
+    margin-right: 56px;
+}
+
+
+.about__link {
+    margin-left: 30px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-size: 26px;
+    line-height: 48px;
+}
+
+.about__info {
+    margin: 5px 30px;
+}
+
+.buy__link {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 123px;
+    letter-spacing: 1px;
+}
+
+.about__title, .contacts__title {
+    margin-left: 30px;
+    margin-top: -25px;
+}
+
+.contacts {
+    width: 543px;
+    height: 209px;
+    background-color:#E1F0F7;
+}
+
+.contacts__info {
+    margin: 20px 30px;
+}
+
+.contacts__map {
+    margin: 10px 30px;
+}

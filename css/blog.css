@@ -1,0 +1,52 @@
+.blog__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 48px;
+}
+
+.blog__list {
+    margin-top: 50px;
+    margin-bottom: 31px;
+    display: flex;
+    row-gap: 15px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog__item {
+    max-width: 380px;
+}
+
+.blog__item_img {
+    margin-bottom: 20px;
+}
+
+.blog__item_date {
+    margin-bottom: 7px;
+}
+
+.blog__item_title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1E0606;
+}
+
+.blog__item_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    margin-top: 15px;
+}
+
+.blog__nav {
+    margin-bottom: 56px;
+}
+
+
+
+
+
