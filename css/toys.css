@@ -55,16 +55,30 @@ margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
 }
 
+ .range-field::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    width:8px;
+    height: 8px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 8px solid rgba(194, 153, 116, 1);
+    cursor: pointer;
+}
 .range-field::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width:24px;
+    width: 24px;
     height: 24px;
     background: #FFFFFF;
     border-radius: 50%;
     border: 8px solid rgba(194, 153, 116, 1);
     cursor: pointer;
-  }
+}
+
+.range-field::-moz-range-progress {
+    background: rgba(194, 153, 116, 1);
+}
 
 /*** COLOR ***/
 
@@ -76,12 +90,13 @@ margin-bottom: 20px;
     margin-bottom: 15px;
 }
 
-.label__checkbox.ind {
-    margin-left: 28px;
+.check__input:disabled + .label__checkbox.ind {
+    color: #908484;
 }
 
-.check__box.ind {
-    margin-left: -28px;
+.check__input:hover + .label__checkbox.ind, 
+.check__input:active + .label__checkbox.ind {
+    text-decoration-line: underline;
 }
 
 /*** DELIVERY ***/
@@ -109,7 +124,8 @@ margin-bottom: 20px;
     clip: rect(0 0 0 0);
 }
 
-.radio__box {
+.label__delivery::after {
+    content: '';
     position: absolute;
     margin-left: -30px;
     width: 17px;
@@ -119,18 +135,24 @@ margin-bottom: 20px;
     border: 2px solid #C29974; 
 }
 
-.radio__input:disabled + .radio__box {
+.radio__input:disabled + .label__delivery::after {
     border: 2px solid #E1CDBA;
 }
 
-.radio__input:checked + .radio__box {
+.radio__input:disabled + .label__delivery {
+    color: #908484;
+}
+
+.radio__input:checked + .label__delivery::after {
     background-color:#C29974;
     box-shadow: inset 0 0 0 3px #FFFFFF;
 }
 
-.radio__input:hover + .radio__box {
-    cursor:pointer;
+.radio__input:active + .label__delivery,
+.radio__input:hover + .label__delivery {
+    text-decoration-line: underline;
 }
+
 
 /*** AMOUNT ***/
 
@@ -151,28 +173,22 @@ margin-bottom: 20px;
     align-items:center;
     width: 80px;
     height: 35px;
-    position: relative;
-    z-index: 0;
 }  
 
 .amount__label {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items:center;
-    z-index: 1;
     width: 80px;
     height: 35px;
 }
 
 
 .amount__input {
-    appearance:none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    position: absolute;
+    display: none;
     width: 35px;
     height: 35px;
-    z-index: 2;
 }
 
 .amount__input:checked + .amount__label {
@@ -180,8 +196,9 @@ margin-bottom: 20px;
 }
 
 /* Уточнить поведение hover */
-.amount__input:hover + .amount__label {
-    background: #F3D0DB;
+.amount__label:hover {
+    background: #EDDEEB;
+    color: #877379;
     cursor:pointer;
 }
 

@@ -195,6 +195,9 @@
     justify-content: space-between;
 }
 
+.services__photo {
+    background: rgba(112, 187, 220, 0.1);
+}
 .services__info_wrapper {
     padding-top: 33px;
     max-width: 480px;

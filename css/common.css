@@ -617,12 +617,21 @@ cursor: pointer;
     border: 1px solid #C7C1C1;
 }
 
-.label__wrapper > input:focus {
+.label__wrapper > input:focus,
+.label__wrapper > input:hover,
+.label__wrapper > input:active {
     outline: 1px solid #C29974;
 }
 
-.label__wrapper > textarea:focus {
+.label__wrapper > textarea:focus,
+.label__wrapper > textarea:hover,
+.label__wrapper > textarea:active {
     outline: 1px solid #C29974;
+}
+
+.label__wrapper > input:disabled,
+.label__wrapper > textarea:disabled {
+    outline: 1px solid #EBEBEB;
 }
 
 .label__checkbox {
@@ -640,7 +649,8 @@ cursor: pointer;
     clip: rect(0 0 0 0);
 }
 
-.check__box {
+.label__checkbox::after {
+    content: ' ';
     position: absolute;
     margin-left: -34px;
     width: 17px;
@@ -650,18 +660,14 @@ cursor: pointer;
     box-shadow: 0 0 0 2px #C29974;  
 }
 
-.check__input:disabled + .check__box {
+.check__input:disabled + .label__checkbox::after {
     box-shadow: 0 0 0 2px #E1CDBA;
 }
 
-.check__input:checked + .check__box {
+.check__input:checked + .label__checkbox::after {
     background-color:#FFFFFF;;
     background-image: url('../image/icons/vector-check.svg');
     background-size:cover;
-}
-
-.check__input:hover + .check__box {
-    cursor:pointer;
 }
 
 .submit__btn {
