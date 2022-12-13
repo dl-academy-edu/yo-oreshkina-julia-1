@@ -65,6 +65,7 @@ margin-bottom: 20px;
     border: 8px solid rgba(194, 153, 116, 1);
     cursor: pointer;
 }
+
 .range-field::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -74,8 +75,7 @@ margin-bottom: 20px;
     border-radius: 50%;
     border: 8px solid rgba(194, 153, 116, 1);
     cursor: pointer;
-}
-
+    
 .range-field::-moz-range-progress {
     background: rgba(194, 153, 116, 1);
 }
@@ -124,6 +124,7 @@ margin-bottom: 20px;
     clip: rect(0 0 0 0);
 }
 
+
 .label__delivery::after {
     content: '';
     position: absolute;
@@ -152,7 +153,6 @@ margin-bottom: 20px;
 .radio__input:hover + .label__delivery {
     text-decoration-line: underline;
 }
-
 
 /*** AMOUNT ***/
 
@@ -184,6 +184,7 @@ margin-bottom: 20px;
     height: 35px;
 }
 
+
 .amount__input {
     position: absolute;
     display: none;
@@ -196,6 +197,7 @@ margin-bottom: 20px;
 }
 
 /* Уточнить поведение hover */
+
 .amount__label:hover {
     background: #EDDEEB;
     color: #877379;
