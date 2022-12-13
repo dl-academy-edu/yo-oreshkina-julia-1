@@ -369,89 +369,7 @@ cursor: pointer;
     display: flex;
 }
 
-/* .rating__caption {
-    padding-right: 28px;
-} */
-
-
-/* .rating-group {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
-    font-size: 16px;
-    line-height: 22px;
-    width: 100px;
-    height: 16px;
-}
-
-.rating__star::before {
-    content: url('../image/icons/star.svg');
-    width: 17px;
-    height: 16px;
-    margin-right: 3px;
-}
-
-.rating__input {
-   -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 17px;
-    height: 16px;
-    font-size: inherit;
-}
-
-.rating__input:focus {
-    outline: none;
-}
-
-.rating__input:checked + .rating__star::before {
-    content: url('../image/icons/star-on.svg');
-}
-
-.rating__input:checked + .rating__star::before:hover {
-    content: url('../image/icons/star-hover.svg');
-}
- */
-/* НЕ РАБОТАЕТ. Надо найти другой способ сохранять прогресс в состоянии checked
-и hover */
-/* .rating__input:hover ~ .rating__input + .rating__star::before {
-    content: url('../image/icons/star.svg');
-}
-
-.rating__input:hover ~ .rating__input:checked + .rating__star::before {
-    content: url('../image/icons/star.svg');
-} */
-
-/* .rating__input:nth-of-type(1) {
-    width: 20px;
-    z-index: 5;
-}
-
-.rating__input:nth-of-type(2) {
-    width: 40px;
-    z-index: 4;
-}
-
-.rating__input:nth-of-type(3) {
-    width: 60px;
-    z-index: 3;
-}
-
-.rating__input:nth-of-type(4) {
-    width: 80px;
-    z-index: 2;
-}
-
-.rating__input:nth-of-type(5) {
-    width: 100px;
-    z-index: 1;
-}
- */
- .rating-group {
+.rating-group {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -692,4 +610,3 @@ cursor: pointer;
 .btn__close:active {
     opacity: 0.4;
 }
-

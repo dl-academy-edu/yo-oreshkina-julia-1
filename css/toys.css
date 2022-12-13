@@ -167,6 +167,7 @@ margin-bottom: 20px;
     align-items:center;
     background-color: #FFFFFF;
 }
+
 .amount__input_wrapper > div {
     display: flex;
     justify-content: center;
@@ -182,7 +183,6 @@ margin-bottom: 20px;
     width: 80px;
     height: 35px;
 }
-
 
 .amount__input {
     position: absolute;
@@ -279,10 +279,3 @@ margin-bottom: 20px;
     margin-top: 42px;
     margin-bottom: 58px;
 }
-
-
-
-
-
-
-
