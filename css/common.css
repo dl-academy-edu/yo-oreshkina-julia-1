@@ -432,6 +432,7 @@ cursor: pointer;
     z-index: 5;
 }
 
+ main
 .rating__input:nth-of-type(4) {
     width: 40px;
     z-index: 4;
@@ -610,3 +611,4 @@ cursor: pointer;
 .btn__close:active {
     opacity: 0.4;
 }
+
