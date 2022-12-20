@@ -75,6 +75,7 @@ margin-bottom: 20px;
     border-radius: 50%;
     border: 8px solid rgba(194, 153, 116, 1);
     cursor: pointer;
+}
     
 .range-field::-moz-range-progress {
     background: rgba(194, 153, 116, 1);
