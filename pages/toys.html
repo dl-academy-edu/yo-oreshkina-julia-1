@@ -39,7 +39,8 @@
         </ul>
     </div>
     <section class="filter">
-        <form class="container filter__form" action="" method="get"> <!-- не уверена -->
+        <h2 class="visually-hidden">filter</h2>
+        <form class="container filter__form" method="get"> <!-- не уверена -->
             <div class="filter__cost">
                 <h3 class="filter__subtitle">Cost</h3>
                 <input class="range-field" type="range" id="range" name="cost" step="100" min="0" max="500">
@@ -83,15 +84,15 @@
                 <legend class="filter__subtitle">Amount</legend>
                 <div class="amount__input_wrapper">
                 <div>
-                    <input class="amount__input" type="radio" id="amount-5" name="amount" value="0-5"></input>
+                    <input class="amount__input" type="radio" id="amount-5" name="amount" value="0-5">
                     <label class="amount__label" for="amount-5">0-5</label>
                 </div>
                 <div> 
-                    <input class="amount__input" type="radio" id="amount-20" name="amount" value="10-20"></input>
+                    <input class="amount__input" type="radio" id="amount-20" name="amount" value="10-20">
                     <label class="amount__label" for="amount-20">10-20</label>
                 </div>
                 <div>
-                    <input class="amount__input" type="radio" id="amount-50" name="amount" value="20-50"></input>
+                    <input class="amount__input" type="radio" id="amount-50" name="amount" value="20-50">
                     <label class="amount__label" for="amount-50">20-50</label> 
                 </div>
             </div>
@@ -101,39 +102,40 @@
     </section>
     <main class="container">
         <section class="toys__content">
+            <h2 class="visually-hidden">Toys catalog</h2>
             <ul class="toys__content_list">
                 <li class="toys__content_item item__bag-chair">
-                    <img class="item__img" src="../image/bag_chair_cover.jpg" alt="bag chair cover" width="380" height="385"/>
+                    <img class="item__img" src="../image/bag_chair_cover.jpg" alt="bag chair cover" width="380" height="385">
                     <a class="item__link" href="#">learn more</a>
                     <p class="item__discription">SHARKY BEAN BAG CHAIR COVER</p>
                     <p class="item__cost">$60.00 USD</p>
                 </li>
                 <li class="toys__content_item item__frames">
-                    <img class="item__img" src="../image/frames.jpg" alt="brass deco frames" width="380" height="385"/>
+                    <img class="item__img" src="../image/frames.jpg" alt="brass deco frames" width="380" height="385">
                     <a class="item__link" href="#">learn more</a>
                     <p class="item__discription">BRASS DECO FRAMES</p>
                     <p class="item__cost">$66.00 USD</p>
                 </li>
                 <li class="toys__content_item item__apron">
-                    <img class="item__img" src="../image/apron.jpg" alt="cibo full apron" width="380" height="385"/>
+                    <img class="item__img" src="../image/apron.jpg" alt="cibo full apron" width="380" height="385">
                     <a class="item__link" href="#">learn more</a>
                     <p class="item__discription">CIBO FULL APRON</p>
                     <p class="item__cost">$60.00 USD</p>
                 </li>
                 <li class="toys__content_item item__gumball-machine">
-                    <img class="item__img" src="../image/gam_machine.jpg" alt="gumble machine" width="380" height="385"/>
+                    <img class="item__img" src="../image/gam_machine.jpg" alt="gumble machine" width="380" height="385">
                     <a class="item__link" href="#">learn more</a>
                     <p class="item__discription">GATCHA GATCHA GUMBALL MACHINE</p>
                     <p class="item__cost">$56.00 USD</p>
                 </li>
                 <li class="toys__content_item item__candle">
-                    <img class="item__img" src="../image/candle.jpg" alt="scented candle" width="380" height="385"/>
+                    <img class="item__img" src="../image/candle.jpg" alt="scented candle" width="380" height="385">
                     <a class="item__link" href="#">learn more</a>
                     <p class="item__discription">CHRISTMAS ADVENT SCENTED CANDLE</p>
                     <p class="item__cost">$29.00 USD</p>
                 </li>
                 <li class="toys__content_item item__tangle">
-                    <img class="item__img" src="../image/tangle.jpg" alt="tangle spinning tea light" width="380" height="382"/>
+                    <img class="item__img" src="../image/tangle.jpg" alt="tangle spinning tea light" width="380" height="382">
                     <a class="item__link" href="#">learn more</a>
                     <p class="item__discription">TANGLE SPINNING TEA LIGHT</p>
                     <p class="item__cost">$56.00 USD</p>
@@ -163,6 +165,7 @@
         <div class="container">
             <div class="free__column wrapper ">
                 <section class="footer__nav column">
+                    <h2 class="visually-hidden">Navigation</h2>
                     <p class="footer__nav_list title">Navigation</p>
                     <ul class="footer__nav_list">
                         <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
@@ -174,6 +177,7 @@
                     </ul>
                 </section>
                 <section class="footer__info column">
+                    <h2 class="visually-hidden">Customer Information</h2>
                     <p class="footer__info title">Customer Information</p>
                     <ul class="footer__info_list">
                         <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
@@ -185,8 +189,9 @@
                     </ul>
                 </section>
                 <section class="column">
+                    <h2 class="visually-hidden">Connect</h2>
                     <p class="footer__connect title">Connect</p>
-                    <form class="connect__form" action="" method="post">
+                    <form class="connect__form" method="post">
                         <input class="connect__input" type="email" name="email" placeholder="Email">
                         <button class="button connect__btn" type="submit">Join</button>
                     </form>
@@ -200,6 +205,7 @@
             </div>
             <div class="box free__column">
                 <section class="rating column">
+                    <h2 class="visually-hidden">Company Rating</h2>
                     <div class="rating-group">
                         <input class="rating__input" type="radio" name="star" id="star-5" value="5">
                         <label class="rating__star" aria-label="terribly" for="star-5"></label>
