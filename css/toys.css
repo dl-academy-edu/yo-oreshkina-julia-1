@@ -53,17 +53,16 @@ margin-bottom: 20px;
     height: 4px;
     border: none;
     background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(#C29974, #C29974);
+    background-size: 20% 100%;
+    background-repeat: no-repeat;
 }
 
- .range-field::-moz-range-thumb {
-    -moz-appearance: none;
-    appearance: none;
-    width:8px;
-    height: 8px;
-    background: #FFFFFF;
-    border-radius: 50%;
-    border: 8px solid rgba(194, 153, 116, 1);
-    cursor: pointer;
+.range-field::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
 }
 
 .range-field::-webkit-slider-thumb {
@@ -71,6 +70,17 @@ margin-bottom: 20px;
     appearance: none;
     width: 24px;
     height: 24px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 8px solid rgba(194, 153, 116, 1);
+    cursor: pointer;
+}
+
+ .range-field::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    width:8px;
+    height: 8px;
     background: #FFFFFF;
     border-radius: 50%;
     border: 8px solid rgba(194, 153, 116, 1);
