@@ -60,6 +60,10 @@ button {
     border-style: none;
 }
 
+label {
+cursor: pointer;
+}
+
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -357,7 +361,7 @@ button {
     align-items: center;
 }
 
-.rating__caption, .copyright {
+.copyright {
     color: #FFFFFF;
 }
 
@@ -365,69 +369,70 @@ button {
     display: flex;
 }
 
-.rating__caption {
-    padding-right: 28px;
-}
-
-
 .rating-group {
     position: relative;
     display: flex;
-    flex-direction: row;
-    gap: 3px;
+    flex-direction: row-reverse;
+    align-items:center;
     font-size: 16px;
     line-height: 22px;
-    width: 100px;
+    width: 251px;
     height: 16px;
+    margin-left: -2px;
+    color: #FFFFFF;
 }
 
-.rating__star::before {
-    content: url('../image/icons/star.svg');
-    width: 17px;
-    height: 16px;
-    margin-right: 3px;
+.rating__star:nth-of-type(5) {
+    margin-left: 30px;
+}
+
+.rating-group:hover, .rating-group:active {
+    color: #C29974;
 }
 
 .rating__input {
-   -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     position: absolute;
-    top: 0;
+    display: none;
+    top: 3px;
     left: 0;
     width: 17px;
     height: 16px;
     font-size: inherit;
 }
 
-.rating__input:focus {
-    outline: none;
+.rating__star {
+    width: 17px;
+    height: 16px;
+    margin-right: 3px;
+    margin-top: 3px;
+    background-image: url('../image/icons/star.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
 }
 
-.rating__input:checked + .rating__star::before {
-    content: url('../image/icons/star-on.svg');
+.rating__input:checked + .rating__star, 
+.rating__input:checked + .rating__star ~ .rating__star {
+    background-image: url('../image/icons/star-on.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
 }
 
-.rating__input:hover + .rating__star::before {
-    content: url('../image/icons/star-hover.svg');
+.rating-group > .rating__input:checked ~ .rating__star:hover,
+.rating-group > .rating__input:checked ~ .rating__star:hover ~ .rating__star,
+.rating__star:hover, 
+.rating__star:hover ~ .rating__input ~ .rating__star {
+    background-image: url('../image/icons/star-hover.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
 }
 
-/* НЕ РАБОТАЕТ. Надо найти другой способ сохранять прогресс в состоянии checked
-и hover */
-/* .rating__input:hover ~ .rating__input + .rating__star::before {
-    content: url('../image/icons/star.svg');
-}
-
-.rating__input:hover ~ .rating__input:checked + .rating__star::before {
-    content: url('../image/icons/star.svg');
-} */
-
-.rating__input:nth-of-type(1) {
+.rating__input:nth-of-type(5) {
     width: 20px;
     z-index: 5;
 }
 
-.rating__input:nth-of-type(2) {
+ main
+.rating__input:nth-of-type(4) {
     width: 40px;
     z-index: 4;
 }
@@ -437,16 +442,15 @@ button {
     z-index: 3;
 }
 
-.rating__input:nth-of-type(4) {
+.rating__input:nth-of-type(2) {
     width: 80px;
     z-index: 2;
 }
 
-.rating__input:nth-of-type(5) {
+.rating__input:nth-of-type(1) {
     width: 100px;
     z-index: 1;
 }
-
 
 .designer {
     font-size: 16px;
@@ -462,7 +466,7 @@ button {
 /*** MODAL WINDOW ***/
 
 .modal__window {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0; 
@@ -531,12 +535,21 @@ button {
     border: 1px solid #C7C1C1;
 }
 
-.label__wrapper > input:focus {
+.label__wrapper > input:focus,
+.label__wrapper > input:hover,
+.label__wrapper > input:active {
     outline: 1px solid #C29974;
 }
 
-.label__wrapper > textarea:focus {
+.label__wrapper > textarea:focus,
+.label__wrapper > textarea:hover,
+.label__wrapper > textarea:active {
     outline: 1px solid #C29974;
+}
+
+.label__wrapper > input:disabled,
+.label__wrapper > textarea:disabled {
+    outline: 1px solid #EBEBEB;
 }
 
 .label__checkbox {
@@ -554,7 +567,8 @@ button {
     clip: rect(0 0 0 0);
 }
 
-.check__box {
+.label__checkbox::after {
+    content: ' ';
     position: absolute;
     margin-left: -34px;
     width: 17px;
@@ -564,18 +578,14 @@ button {
     box-shadow: 0 0 0 2px #C29974;  
 }
 
-.check__input:disabled + .check__box {
+.check__input:disabled + .label__checkbox::after {
     box-shadow: 0 0 0 2px #E1CDBA;
 }
 
-.check__input:checked + .check__box {
+.check__input:checked + .label__checkbox::after {
     background-color:#FFFFFF;;
     background-image: url('../image/icons/vector-check.svg');
     background-size:cover;
-}
-
-.check__input:hover + .check__box {
-    cursor:pointer;
 }
 
 .submit__btn {

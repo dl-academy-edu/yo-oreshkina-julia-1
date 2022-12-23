@@ -23,6 +23,7 @@
 
 .blog__item_date {
     margin-bottom: 7px;
+    color: #818181;
 }
 
 .blog__item_title {
@@ -32,6 +33,10 @@
     font-size: 24px;
     line-height: 31px;
     color: #1E0606;
+}
+
+.blog__item_title:hover, .blog__item_title:active {
+    text-decoration-line: underline;
 }
 
 .blog__item_text {
@@ -45,8 +50,3 @@
 .blog__nav {
     margin-bottom: 56px;
 }
-
-
-
-
-
