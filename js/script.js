@@ -7,26 +7,24 @@ const inputName = document.querySelector('.window__input');
 
 buttonModalWindow.addEventListener('click', () => {
     modalWindow.classList.toggle('hidden');
+    document.body.classList.add('no-scroll');
     inputName.focus();
 });
 
 buttonClosedModalWindow.addEventListener('click', () => {
     modalWindow.classList.add('hidden');
+    document.body.classList.remove('no-scroll');
 });
 
 modalWindow.addEventListener('click', () => {
     modalWindow.classList.add('hidden');
+    document.body.classList.remove('no-scroll');
 });
 
 window.addEventListener('keydown', function(event) {
     if(event.code === "Escape" && !modalWindow.classList.contains('hidden')) {
         modalWindow.classList.add('hidden');
+        document.body.classList.remove('no-scroll');
         buttonModalWindow.focus();
     }
 });
-
-window.addEventListener('scroll', function(event) {
-    if (!modalWindow.classList.contains('hidden')) {
-        window.scrollTo(0,0);
-    }
-  });

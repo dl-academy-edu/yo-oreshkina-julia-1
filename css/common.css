@@ -101,6 +101,10 @@ cursor: pointer;
     background: #C7C1C1;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /*** BREADCRUMBS ***/
 
 .breadcrumbs {
