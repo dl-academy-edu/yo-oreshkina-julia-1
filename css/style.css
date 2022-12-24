@@ -34,7 +34,7 @@
     border: none;
     background: #D6CAC2;
 }
-.switch__btn.btn_1 {
+.btn-active {
     background: #725F5B;
 }
 
