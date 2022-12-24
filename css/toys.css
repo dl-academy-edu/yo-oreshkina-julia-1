@@ -65,22 +65,22 @@ margin-bottom: 20px;
     background: transparent;
 }
 
-.range-field::-webkit-slider-thumb {
-    -webkit-appearance: none;
+ .range-field::-moz-range-thumb {
+    -moz-appearance: none;
     appearance: none;
-    width: 24px;
-    height: 24px;
+    width:8px;
+    height: 8px;
     background: #FFFFFF;
     border-radius: 50%;
     border: 8px solid rgba(194, 153, 116, 1);
     cursor: pointer;
 }
 
- .range-field::-moz-range-thumb {
-    -moz-appearance: none;
+.range-field::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
-    width:8px;
-    height: 8px;
+    width: 24px;
+    height: 24px;
     background: #FFFFFF;
     border-radius: 50%;
     border: 8px solid rgba(194, 153, 116, 1);
