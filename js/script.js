@@ -3,6 +3,7 @@
 window.addEventListener('DOMContentLoaded', function(){ 
 
     const modalWindow = document.querySelector('.modal__window');
+    const overlay = document.querySelector('.overlay');
     const buttonModalWindow = document.querySelector('.banner__btn');
     const buttonClosedModalWindow = document.querySelector('.modal__window_closed');
     const inputName = document.querySelector('.window__input');
@@ -51,7 +52,7 @@ window.addEventListener('DOMContentLoaded', function(){
             document.body.classList.remove('no-scroll');
         });
         
-        modalWindow.addEventListener('click', () => {
+        overlay.addEventListener('click', () => {
             modalWindow.classList.add('hidden');
             document.body.classList.remove('no-scroll');
         });
